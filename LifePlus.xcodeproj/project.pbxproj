@@ -14,6 +14,7 @@
 		57613C591E10D74000275081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57613C571E10D74000275081 /* LaunchScreen.storyboard */; };
 		57613C641E10D74000275081 /* LifePlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C631E10D74000275081 /* LifePlusTests.swift */; };
 		57613C6F1E10D74000275081 /* LifePlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C6E1E10D74000275081 /* LifePlusUITests.swift */; };
+		57AE08BF1E1110E600564CF8 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE08BE1E1110E600564CF8 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		57613C6A1E10D74000275081 /* LifePlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifePlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57613C6E1E10D74000275081 /* LifePlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifePlusUITests.swift; sourceTree = "<group>"; };
 		57613C701E10D74000275081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57AE08BE1E1110E600564CF8 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		57F5F9D91E10E8D3005E4BD0 /* HomePageViewController */ = {
 			isa = PBXGroup;
 			children = (
+				57AE08BE1E1110E600564CF8 /* HomePageViewController.swift */,
 			);
 			name = HomePageViewController;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				57613C511E10D74000275081 /* ViewController.swift in Sources */,
 				57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */,
+				57AE08BF1E1110E600564CF8 /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
