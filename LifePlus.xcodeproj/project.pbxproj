@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C4E1E10D74000275081 /* AppDelegate.swift */; };
+		57613C511E10D74000275081 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C501E10D74000275081 /* ViewController.swift */; };
+		57613C541E10D74000275081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57613C521E10D74000275081 /* Main.storyboard */; };
+		57613C561E10D74000275081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57613C551E10D74000275081 /* Assets.xcassets */; };
+		57613C591E10D74000275081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57613C571E10D74000275081 /* LaunchScreen.storyboard */; };
+		57613C641E10D74000275081 /* LifePlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C631E10D74000275081 /* LifePlusTests.swift */; };
+		57613C6F1E10D74000275081 /* LifePlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C6E1E10D74000275081 /* LifePlusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57613C601E10D74000275081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57613C431E10D73F00275081 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57613C4A1E10D73F00275081;
+			remoteInfo = LifePlus;
+		};
+		57613C6B1E10D74000275081 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57613C431E10D73F00275081 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57613C4A1E10D73F00275081;
+			remoteInfo = LifePlus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57613C4B1E10D73F00275081 /* LifePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57613C4E1E10D74000275081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57613C501E10D74000275081 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57613C531E10D74000275081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57613C551E10D74000275081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57613C581E10D74000275081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57613C5A1E10D74000275081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57613C5F1E10D74000275081 /* LifePlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifePlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57613C631E10D74000275081 /* LifePlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifePlusTests.swift; sourceTree = "<group>"; };
+		57613C651E10D74000275081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57613C6A1E10D74000275081 /* LifePlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifePlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57613C6E1E10D74000275081 /* LifePlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifePlusUITests.swift; sourceTree = "<group>"; };
+		57613C701E10D74000275081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57613C481E10D73F00275081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57613C5C1E10D74000275081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57613C671E10D74000275081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57613C421E10D73F00275081 = {
+			isa = PBXGroup;
+			children = (
+				57613C4D1E10D73F00275081 /* LifePlus */,
+				57613C621E10D74000275081 /* LifePlusTests */,
+				57613C6D1E10D74000275081 /* LifePlusUITests */,
+				57613C4C1E10D73F00275081 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57613C4C1E10D73F00275081 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57613C4B1E10D73F00275081 /* LifePlus.app */,
+				57613C5F1E10D74000275081 /* LifePlusTests.xctest */,
+				57613C6A1E10D74000275081 /* LifePlusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57613C4D1E10D73F00275081 /* LifePlus */ = {
+			isa = PBXGroup;
+			children = (
+				57F5F9D91E10E8D3005E4BD0 /* HomePageViewController */,
+				57613C4E1E10D74000275081 /* AppDelegate.swift */,
+				57613C501E10D74000275081 /* ViewController.swift */,
+				57613C521E10D74000275081 /* Main.storyboard */,
+				57613C551E10D74000275081 /* Assets.xcassets */,
+				57613C571E10D74000275081 /* LaunchScreen.storyboard */,
+				57613C5A1E10D74000275081 /* Info.plist */,
+			);
+			path = LifePlus;
+			sourceTree = "<group>";
+		};
+		57613C621E10D74000275081 /* LifePlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				57613C631E10D74000275081 /* LifePlusTests.swift */,
+				57613C651E10D74000275081 /* Info.plist */,
+			);
+			path = LifePlusTests;
+			sourceTree = "<group>";
+		};
+		57613C6D1E10D74000275081 /* LifePlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57613C6E1E10D74000275081 /* LifePlusUITests.swift */,
+				57613C701E10D74000275081 /* Info.plist */,
+			);
+			path = LifePlusUITests;
+			sourceTree = "<group>";
+		};
+		57F5F9D91E10E8D3005E4BD0 /* HomePageViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HomePageViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57613C4A1E10D73F00275081 /* LifePlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57613C731E10D74000275081 /* Build configuration list for PBXNativeTarget "LifePlus" */;
+			buildPhases = (
+				57613C471E10D73F00275081 /* Sources */,
+				57613C481E10D73F00275081 /* Frameworks */,
+				57613C491E10D73F00275081 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifePlus;
+			productName = LifePlus;
+			productReference = 57613C4B1E10D73F00275081 /* LifePlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57613C5E1E10D74000275081 /* LifePlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57613C761E10D74000275081 /* Build configuration list for PBXNativeTarget "LifePlusTests" */;
+			buildPhases = (
+				57613C5B1E10D74000275081 /* Sources */,
+				57613C5C1E10D74000275081 /* Frameworks */,
+				57613C5D1E10D74000275081 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57613C611E10D74000275081 /* PBXTargetDependency */,
+			);
+			name = LifePlusTests;
+			productName = LifePlusTests;
+			productReference = 57613C5F1E10D74000275081 /* LifePlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57613C691E10D74000275081 /* LifePlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57613C791E10D74000275081 /* Build configuration list for PBXNativeTarget "LifePlusUITests" */;
+			buildPhases = (
+				57613C661E10D74000275081 /* Sources */,
+				57613C671E10D74000275081 /* Frameworks */,
+				57613C681E10D74000275081 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57613C6C1E10D74000275081 /* PBXTargetDependency */,
+			);
+			name = LifePlusUITests;
+			productName = LifePlusUITests;
+			productReference = 57613C6A1E10D74000275081 /* LifePlusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57613C431E10D73F00275081 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Javu;
+				TargetAttributes = {
+					57613C4A1E10D73F00275081 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = N235UM7YFU;
+						ProvisioningStyle = Automatic;
+					};
+					57613C5E1E10D74000275081 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = N235UM7YFU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 57613C4A1E10D73F00275081;
+					};
+					57613C691E10D74000275081 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = N235UM7YFU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 57613C4A1E10D73F00275081;
+					};
+				};
+			};
+			buildConfigurationList = 57613C461E10D73F00275081 /* Build configuration list for PBXProject "LifePlus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57613C421E10D73F00275081;
+			productRefGroup = 57613C4C1E10D73F00275081 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57613C4A1E10D73F00275081 /* LifePlus */,
+				57613C5E1E10D74000275081 /* LifePlusTests */,
+				57613C691E10D74000275081 /* LifePlusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57613C491E10D73F00275081 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57613C591E10D74000275081 /* LaunchScreen.storyboard in Resources */,
+				57613C561E10D74000275081 /* Assets.xcassets in Resources */,
+				57613C541E10D74000275081 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57613C5D1E10D74000275081 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57613C681E10D74000275081 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57613C471E10D73F00275081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57613C511E10D74000275081 /* ViewController.swift in Sources */,
+				57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57613C5B1E10D74000275081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57613C641E10D74000275081 /* LifePlusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57613C661E10D74000275081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57613C6F1E10D74000275081 /* LifePlusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57613C611E10D74000275081 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57613C4A1E10D73F00275081 /* LifePlus */;
+			targetProxy = 57613C601E10D74000275081 /* PBXContainerItemProxy */;
+		};
+		57613C6C1E10D74000275081 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57613C4A1E10D73F00275081 /* LifePlus */;
+			targetProxy = 57613C6B1E10D74000275081 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57613C521E10D74000275081 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57613C531E10D74000275081 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57613C571E10D74000275081 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57613C581E10D74000275081 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57613C711E10D74000275081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57613C721E10D74000275081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57613C741E10D74000275081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N235UM7YFU;
+				INFOPLIST_FILE = LifePlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mudaheo.LifePlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		57613C751E10D74000275081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N235UM7YFU;
+				INFOPLIST_FILE = LifePlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mudaheo.LifePlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		57613C771E10D74000275081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = N235UM7YFU;
+				INFOPLIST_FILE = LifePlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mudaheo.LifePlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifePlus.app/LifePlus";
+			};
+			name = Debug;
+		};
+		57613C781E10D74000275081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = N235UM7YFU;
+				INFOPLIST_FILE = LifePlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mudaheo.LifePlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifePlus.app/LifePlus";
+			};
+			name = Release;
+		};
+		57613C7A1E10D74000275081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = N235UM7YFU;
+				INFOPLIST_FILE = LifePlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mudaheo.LifePlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LifePlus;
+			};
+			name = Debug;
+		};
+		57613C7B1E10D74000275081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = N235UM7YFU;
+				INFOPLIST_FILE = LifePlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mudaheo.LifePlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LifePlus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57613C461E10D73F00275081 /* Build configuration list for PBXProject "LifePlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57613C711E10D74000275081 /* Debug */,
+				57613C721E10D74000275081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57613C731E10D74000275081 /* Build configuration list for PBXNativeTarget "LifePlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57613C741E10D74000275081 /* Debug */,
+				57613C751E10D74000275081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57613C761E10D74000275081 /* Build configuration list for PBXNativeTarget "LifePlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57613C771E10D74000275081 /* Debug */,
+				57613C781E10D74000275081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57613C791E10D74000275081 /* Build configuration list for PBXNativeTarget "LifePlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57613C7A1E10D74000275081 /* Debug */,
+				57613C7B1E10D74000275081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57613C431E10D73F00275081 /* Project object */;
+}
