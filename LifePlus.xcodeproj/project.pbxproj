@@ -14,6 +14,11 @@
 		57613C591E10D74000275081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57613C571E10D74000275081 /* LaunchScreen.storyboard */; };
 		57613C641E10D74000275081 /* LifePlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C631E10D74000275081 /* LifePlusTests.swift */; };
 		57613C6F1E10D74000275081 /* LifePlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C6E1E10D74000275081 /* LifePlusUITests.swift */; };
+		FE2C80EE1E12528E00E9E105 /* CoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2C80ED1E12528E00E9E105 /* CoreAPI.swift */; };
+		FE2D715D1E111DE8001E2E2B /* ChooseBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */; };
+		FECE02D21E12043E00A77157 /* RegisterCloseCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE02D11E12043E00A77157 /* RegisterCloseCustomerViewController.swift */; };
+		FECE02D61E1216FF00A77157 /* ContentRegisterCloseCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE02D51E1216FF00A77157 /* ContentRegisterCloseCustomerViewController.swift */; };
+		FECE02D81E122D2D00A77157 /* ConfirmLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE02D71E122D2D00A77157 /* ConfirmLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		57613C6A1E10D74000275081 /* LifePlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifePlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57613C6E1E10D74000275081 /* LifePlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifePlusUITests.swift; sourceTree = "<group>"; };
 		57613C701E10D74000275081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE2C80ED1E12528E00E9E105 /* CoreAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAPI.swift; sourceTree = "<group>"; };
+		FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBrandViewController.swift; sourceTree = "<group>"; };
+		FECE02D11E12043E00A77157 /* RegisterCloseCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCloseCustomerViewController.swift; sourceTree = "<group>"; };
+		FECE02D51E1216FF00A77157 /* ContentRegisterCloseCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRegisterCloseCustomerViewController.swift; sourceTree = "<group>"; };
+		FECE02D71E122D2D00A77157 /* ConfirmLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,8 @@
 		57613C4D1E10D73F00275081 /* LifePlus */ = {
 			isa = PBXGroup;
 			children = (
+				FE2C80EC1E12526900E9E105 /* API */,
+				FE2D715B1E111243001E2E2B /* Login */,
 				57F5F9D91E10E8D3005E4BD0 /* HomePageViewController */,
 				57613C4E1E10D74000275081 /* AppDelegate.swift */,
 				57613C501E10D74000275081 /* ViewController.swift */,
@@ -131,6 +143,25 @@
 			children = (
 			);
 			name = HomePageViewController;
+			sourceTree = "<group>";
+		};
+		FE2C80EC1E12526900E9E105 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FE2C80ED1E12528E00E9E105 /* CoreAPI.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		FE2D715B1E111243001E2E2B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */,
+				FECE02D11E12043E00A77157 /* RegisterCloseCustomerViewController.swift */,
+				FECE02D51E1216FF00A77157 /* ContentRegisterCloseCustomerViewController.swift */,
+				FECE02D71E122D2D00A77157 /* ConfirmLoginViewController.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECE02D21E12043E00A77157 /* RegisterCloseCustomerViewController.swift in Sources */,
+				FE2D715D1E111DE8001E2E2B /* ChooseBrandViewController.swift in Sources */,
+				FECE02D81E122D2D00A77157 /* ConfirmLoginViewController.swift in Sources */,
 				57613C511E10D74000275081 /* ViewController.swift in Sources */,
+				FE2C80EE1E12528E00E9E105 /* CoreAPI.swift in Sources */,
 				57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */,
+				FECE02D61E1216FF00A77157 /* ContentRegisterCloseCustomerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
