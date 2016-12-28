@@ -1,5 +1,5 @@
 //
-//  ConfirmLoginViewController.swift
+//  ConfirmSignUpViewController.swift
 //  LifePlus
 //
 //  Created by Nhân Phùng on 12/27/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ConfirmLoginViewController: UIViewController {
+class ConfirmSignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  ContentRegisterCloseCustomerViewController.swift
+//  SignUpAccountViewController.swift
 //  LifePlus
 //
 //  Created by Nhân Phùng on 12/27/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContentRegisterCloseCustomerViewController: UIViewController {
+class SignUpAccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

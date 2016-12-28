@@ -1,5 +1,5 @@
 //
-//  RegisterCloseCustomerViewController.swift
+//  ConfirmSMSViewController.swift
 //  LifePlus
 //
 //  Created by Nhân Phùng on 12/27/16.
@@ -8,18 +8,17 @@
 
 import UIKit
 
-class RegisterCloseCustomerViewController: UIViewController {
-
-
+class ConfirmSMSViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated
+        // Dispose of any resources that can be recreated.
     }
     
 
@@ -34,4 +33,3 @@ class RegisterCloseCustomerViewController: UIViewController {
     */
 
 }
-

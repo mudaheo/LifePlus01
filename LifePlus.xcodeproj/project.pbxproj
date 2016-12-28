@@ -16,9 +16,10 @@
 		57613C6F1E10D74000275081 /* LifePlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C6E1E10D74000275081 /* LifePlusUITests.swift */; };
 		FE2C80EE1E12528E00E9E105 /* CoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2C80ED1E12528E00E9E105 /* CoreAPI.swift */; };
 		FE2D715D1E111DE8001E2E2B /* ChooseBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */; };
+		FE590FD61E12AC0200852E4C /* SignUpAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE590FD51E12AC0200852E4C /* SignUpAccountViewController.swift */; };
+		FE590FD81E12ADAA00852E4C /* ConfirmSMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE590FD71E12ADAA00852E4C /* ConfirmSMSViewController.swift */; };
+		FE590FDA1E12B43700852E4C /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE590FD91E12B43700852E4C /* ConfirmSignUpViewController.swift */; };
 		FECE02D21E12043E00A77157 /* RegisterCloseCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE02D11E12043E00A77157 /* RegisterCloseCustomerViewController.swift */; };
-		FECE02D61E1216FF00A77157 /* ContentRegisterCloseCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE02D51E1216FF00A77157 /* ContentRegisterCloseCustomerViewController.swift */; };
-		FECE02D81E122D2D00A77157 /* ConfirmLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE02D71E122D2D00A77157 /* ConfirmLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +55,10 @@
 		57613C701E10D74000275081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE2C80ED1E12528E00E9E105 /* CoreAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAPI.swift; sourceTree = "<group>"; };
 		FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBrandViewController.swift; sourceTree = "<group>"; };
+		FE590FD51E12AC0200852E4C /* SignUpAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpAccountViewController.swift; sourceTree = "<group>"; };
+		FE590FD71E12ADAA00852E4C /* ConfirmSMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmSMSViewController.swift; sourceTree = "<group>"; };
+		FE590FD91E12B43700852E4C /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
 		FECE02D11E12043E00A77157 /* RegisterCloseCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCloseCustomerViewController.swift; sourceTree = "<group>"; };
-		FECE02D51E1216FF00A77157 /* ContentRegisterCloseCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRegisterCloseCustomerViewController.swift; sourceTree = "<group>"; };
-		FECE02D71E122D2D00A77157 /* ConfirmLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +160,9 @@
 			children = (
 				FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */,
 				FECE02D11E12043E00A77157 /* RegisterCloseCustomerViewController.swift */,
-				FECE02D51E1216FF00A77157 /* ContentRegisterCloseCustomerViewController.swift */,
-				FECE02D71E122D2D00A77157 /* ConfirmLoginViewController.swift */,
+				FE590FD51E12AC0200852E4C /* SignUpAccountViewController.swift */,
+				FE590FD71E12ADAA00852E4C /* ConfirmSMSViewController.swift */,
+				FE590FD91E12B43700852E4C /* ConfirmSignUpViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -302,12 +305,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECE02D21E12043E00A77157 /* RegisterCloseCustomerViewController.swift in Sources */,
+				FE590FDA1E12B43700852E4C /* ConfirmSignUpViewController.swift in Sources */,
 				FE2D715D1E111DE8001E2E2B /* ChooseBrandViewController.swift in Sources */,
-				FECE02D81E122D2D00A77157 /* ConfirmLoginViewController.swift in Sources */,
+				FE590FD61E12AC0200852E4C /* SignUpAccountViewController.swift in Sources */,
+				FE590FD81E12ADAA00852E4C /* ConfirmSMSViewController.swift in Sources */,
 				57613C511E10D74000275081 /* ViewController.swift in Sources */,
 				FE2C80EE1E12528E00E9E105 /* CoreAPI.swift in Sources */,
 				57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */,
-				FECE02D61E1216FF00A77157 /* ContentRegisterCloseCustomerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
