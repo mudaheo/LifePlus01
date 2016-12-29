@@ -9,6 +9,9 @@
 import UIKit
 
 class ConfirmSMSViewController: UIViewController {
+    @IBOutlet weak var activatedCodeTextField: UITextField!
+    var currentPhoneNumber: String!
+    let confirmSMS: ConfirmSMSAPI = ConfirmSMSAPI()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +25,49 @@ class ConfirmSMSViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK: - Action
+    
+    @IBAction func handleCancelButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
+    @IBAction func handleConfirmButton(_ sender: Any) {
+      confirmSMS.requestActivateUser(activatedCodeTextField.text!) { (response) in
+        if response.first == "noconnection" {
+            
+        }else{
+            if response.first == "success" {
+                
+            }else {
+                self.alertViewWithMessage(response.first!, "OK")
+            }
+        }
+    }
+}
+    @IBAction func handleResendSMSButton(_ sender: Any) {
+        confirmSMS.requestResendSMS(currentPhoneNumber) { (response) in
+            if response.first == "noconnection" {
+                
+            }else{
+                if response.first == "success" {
+                    self.alertViewWithMessage(response[1], "OK")
+                }else{
+                    self.alertViewWithMessage(response.first!, "OK")
+                }
+            }
+        }
+    }
+    
+    private func alertViewWithMessage(_ message: String,_ buttonTitle: String ) {
+        
+        let alertView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "lifePlusAlertView") as! LifePlusAlertViewController
+        alertView.message = message
+        alertView.buttonTitle = buttonTitle
+        self.addChildViewController(alertView)
+        alertView.view.frame = self.view.frame
+        self.view.addSubview(alertView.view)
+        alertView.didMove(toParentViewController: self)
+        
+    }
+
 
 }

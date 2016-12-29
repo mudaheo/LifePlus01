@@ -2,16 +2,13 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "checked.png",
+      "filename" : "locationPin.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "locationPin@2x.png",
       "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
     }
   ],
   "info" : {
