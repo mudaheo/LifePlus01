@@ -6,6 +6,9 @@ target 'LifePlus' do
   use_frameworks!
 
   # Pods for LifePlus
+  pod 'SJSegmentedScrollView', '1.3.5'
+  pod 'moa', '~> 8.0'
+  pod 'Auk', '~> 7.0'
 
   target 'LifePlusTests' do
     inherit! :search_paths
