@@ -32,26 +32,31 @@ class ConfirmSMSViewController: UIViewController {
     }
     @IBAction func handleConfirmButton(_ sender: Any) {
       confirmSMS.requestActivateUser(activatedCodeTextField.text!) { (response) in
-        if response.first == "noconnection" {
-            
-        }else{
-            if response.first == "success" {
+        DispatchQueue.main.async {
+            if response.first == "noconnection" {
                 
-            }else {
-                self.alertViewWithMessage(response.first!, "OK")
+            }else{
+                if response.first == "success" {
+                    let chooseBrandView = self.storyboard?.instantiateViewController(withIdentifier: "ChooseBrandVC") as! ChooseBrandViewController
+                    self.present(chooseBrandView, animated: true, completion: nil)
+                }else {
+                    self.alertViewWithMessage(response.first!, "OK")
+                }
             }
         }
     }
 }
     @IBAction func handleResendSMSButton(_ sender: Any) {
         confirmSMS.requestResendSMS(currentPhoneNumber) { (response) in
-            if response.first == "noconnection" {
-                
-            }else{
-                if response.first == "success" {
-                    self.alertViewWithMessage(response[1], "OK")
+            DispatchQueue.main.async {
+                if response.first == "noconnection" {
+                    
                 }else{
-                    self.alertViewWithMessage(response.first!, "OK")
+                    if response.first == "success" {
+                        self.alertViewWithMessage(response[1], "OK")
+                    }else{
+                        self.alertViewWithMessage(response.first!, "OK")
+                    }
                 }
             }
         }
