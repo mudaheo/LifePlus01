@@ -13,10 +13,10 @@
 		570A17011E13785E000E3199 /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A17001E13785E000E3199 /* BuyTableViewController.swift */; };
 		570A17031E137864000E3199 /* PlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A17021E137864000E3199 /* PlaceTableViewController.swift */; };
 		570A17051E137A68000E3199 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A17041E137A68000E3199 /* HomePageViewController.swift */; };
+		5731CED41E160FF400D0671F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5731CED31E160FF400D0671F /* Assets.xcassets */; };
 		57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C4E1E10D74000275081 /* AppDelegate.swift */; };
 		57613C511E10D74000275081 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C501E10D74000275081 /* ViewController.swift */; };
 		57613C541E10D74000275081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57613C521E10D74000275081 /* Main.storyboard */; };
-		57613C561E10D74000275081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57613C551E10D74000275081 /* Assets.xcassets */; };
 		57613C591E10D74000275081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57613C571E10D74000275081 /* LaunchScreen.storyboard */; };
 		57613C641E10D74000275081 /* LifePlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C631E10D74000275081 /* LifePlusTests.swift */; };
 		57613C6F1E10D74000275081 /* LifePlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C6E1E10D74000275081 /* LifePlusUITests.swift */; };
@@ -54,11 +54,11 @@
 		570A17001E13785E000E3199 /* BuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
 		570A17021E137864000E3199 /* PlaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewController.swift; sourceTree = "<group>"; };
 		570A17041E137A68000E3199 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		5731CED31E160FF400D0671F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57613C4B1E10D73F00275081 /* LifePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57613C4E1E10D74000275081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57613C501E10D74000275081 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		57613C531E10D74000275081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		57613C551E10D74000275081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57613C581E10D74000275081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57613C5A1E10D74000275081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57613C5F1E10D74000275081 /* LifePlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifePlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,11 +146,11 @@
 		57613C4D1E10D73F00275081 /* LifePlus */ = {
 			isa = PBXGroup;
 			children = (
-				57F5F9D91E10E8D3005E4BD0 /* HomePageViewController */,
+				57F5F9D91E10E8D3005E4BD0 /* HomePage */,
 				57613C4E1E10D74000275081 /* AppDelegate.swift */,
 				57613C501E10D74000275081 /* ViewController.swift */,
 				57613C521E10D74000275081 /* Main.storyboard */,
-				57613C551E10D74000275081 /* Assets.xcassets */,
+				5731CED31E160FF400D0671F /* Assets.xcassets */,
 				57613C571E10D74000275081 /* LaunchScreen.storyboard */,
 				57613C5A1E10D74000275081 /* Info.plist */,
 			);
@@ -207,14 +207,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		57F5F9D91E10E8D3005E4BD0 /* HomePageViewController */ = {
+		57F5F9D91E10E8D3005E4BD0 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
 				57ADE1291E13F68D00CEE0DC /* Controller */,
 				57AE57221E13AA1E001C86B8 /* Model */,
 				57AE57211E13AA0F001C86B8 /* ViewController */,
 			);
-			name = HomePageViewController;
+			name = HomePage;
 			sourceTree = "<group>";
 		};
 		E877E03D58FBBD4744BDDF88 /* Pods */ = {
@@ -350,9 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				57613C591E10D74000275081 /* LaunchScreen.storyboard in Resources */,
-				57613C561E10D74000275081 /* Assets.xcassets in Resources */,
 				57AE572F1E13C1FA001C86B8 /* CustomCell.xib in Resources */,
 				57613C541E10D74000275081 /* Main.storyboard in Resources */,
+				5731CED41E160FF400D0671F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

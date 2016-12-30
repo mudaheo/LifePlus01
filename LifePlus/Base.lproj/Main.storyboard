@@ -40,7 +40,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ZNj-4q-GbU"/>
+                    <navigationItem key="navigationItem" id="ZNj-4q-GbU">
+                        <barButtonItem key="rightBarButtonItem" image="ic_login" style="done" id="2uR-K8-dE0">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w7N-et-V20" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,4 +195,7 @@
             <point key="canvasLocation" x="1001" y="-25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_login" width="36" height="36"/>
+    </resources>
 </document>

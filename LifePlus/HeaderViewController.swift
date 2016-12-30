@@ -36,9 +36,11 @@ extension HeaderViewController: CampaignControllerDelegate {
     func getDataWithCampaignFromAPI(dataArr: Array<Any>) {
         getData(dataArr: dataArr)
         DispatchQueue.main.async {
+            self.scrollView.auk.startAutoScroll(delaySeconds: 3.0)
+            self.scrollView.auk.settings.contentMode = .scaleToFill
+            self.scrollView.auk.settings.pageControl.cornerRadius = 0.0
             for item in self.imageArr {
                 self.scrollView.auk.show(url: item)
-                self.scrollView.auk.startAutoScroll(delaySeconds: 3.0)
             }
         }
     }

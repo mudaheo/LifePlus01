@@ -27,7 +27,7 @@ class HomePageViewController: SJSegmentedViewController {
             let placeViewController = storyboard.instantiateViewController(withIdentifier: "PlaceTableViewController")
             placeViewController.title = "Đi đâu?"
             
-//            let view = getSegmentTabWithImage("OT")
+//            let view = getSegmentTabWithImage("ic_angiNoIcon_act")
 //            foodViewController.navigationItem.titleView = view
             
             headerViewController = headerController
@@ -36,21 +36,23 @@ class HomePageViewController: SJSegmentedViewController {
             selectedSegmentViewHeight = 5.0
             segmentTitleColor = .gray
             segmentViewHeight = 70
-            selectedSegmentViewColor = .red
+            
+//selectedSegmentViewColor
+            
             segmentShadow = SJShadow.light()
             delegate = self
         
         }
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named:"Banner"), for: .default)
         super.viewDidLoad()
     }
     
     //Use for custom Tab view.
     func getSegmentTabWithImage(_ imageName: String) -> UIView {
         let view = UIImageView()
-        view.frame.size.width = self.view.frame.width / 3
-        view.image = UIImage(named: "OT")
-        view.contentMode = .scaleToFill
-        view.backgroundColor = .orange
+        view.frame.size.width = 150//self.view.frame.width / 3
+//        view.contentMode = .scaleToFill
+        view.backgroundColor = UIColor(patternImage: UIImage(named: imageName)!)
         
         return view
     }
@@ -64,7 +66,6 @@ class HomePageViewController: SJSegmentedViewController {
 
 extension HomePageViewController: SJSegmentedViewControllerDelegate{
     func didMoveToPage(_ controller: UIViewController, segment: SJSegmentTab?, index: Int) {
-       
         if selectedSegment != nil {
             selectedSegment?.titleColor(.lightGray)
         }
