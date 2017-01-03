@@ -82,7 +82,7 @@ class ChooseBrandViewController: UIViewController {
     }
 
 }
-extension ChooseBrandViewController: UITableViewDataSource{
+extension ChooseBrandViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return merchantList.count
     }
@@ -110,6 +110,16 @@ extension ChooseBrandViewController: UITableViewDataSource{
         }
         
         return cell
+    }
+    
+    // DELEGATE
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let registerCloseCustomer = self.storyboard?.instantiateViewController(withIdentifier: "RegisterCloseCustomerVC") as! RegisterCloseCustomerViewController
+        let merchant: Merchant = merchantList[indexPath.row]
+        registerCloseCustomer.merchantIndex = indexPath.row
+        registerCloseCustomer.currentMerchant = merchant
+        self.present(registerCloseCustomer, animated: true, completion: nil)
     }
 }
 

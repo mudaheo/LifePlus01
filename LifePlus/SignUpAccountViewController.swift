@@ -40,8 +40,10 @@ class SignUpAccountViewController: UIViewController {
    
   
     @IBAction func handleSignUpButton(_ sender: Any) {
-        signUpUser.requestSignUpUser(2, emailUserTextField.text!, passwordUserTextField.text!, phoneUserTextField.text!) { (responseValue) in
+        signUpUser.requestSignUpUser(2, emailUserTextField.text!, passwordUserTextField.text!, phoneUserTextField.text!, { (responseValue) in
+            print("1")
             DispatchQueue.main.async {
+                print("2")
                 if responseValue.first! == "noconnection" {
                     self.alertViewWithMessage("No Internet", "OK")
                 }else{
@@ -59,8 +61,11 @@ class SignUpAccountViewController: UIViewController {
                     }
                 }
             }
- 
+            
+        }){
+            print("3")
         }
+
     }
     
     private func alertViewWithMessage(_ message: String,_ buttonTitle: String ) {

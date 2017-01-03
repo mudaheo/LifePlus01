@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    lazy var coreDataStack = CoreDataStack()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print("OK")
         return true
     }
 
@@ -39,8 +41,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        deleteMerchantData()
     }
 
+    //MARK: - Delete Data 
+    func deleteMerchantData() {
+        let fetchRequest: NSFetchRequest<Merchant> = Merchant.fetchRequest()
+        do {
+           let results = try coreDataStack.managedObjectContext.count(for: fetchRequest)
+            print(results)
+            if results != 0 {
+                print("---- REMOVE DATA ----")
+                do {
+                    let result = try coreDataStack.managedObjectContext.fetch(fetchRequest)
+                    for object in result{
+                        coreDataStack.managedObjectContext.delete(object)
+                    }
+                } catch let error as NSError {
+                    fatalError("Error fetching: \(error.localizedDescription)")
+                }
+            }
+        } catch let error as NSError {
+            fatalError("Error: \(error)")
+        }
+    }
 
 }
 

@@ -10,7 +10,7 @@ import UIKit
 
 class SignUpUserAPI: NSObject {
     
-    func requestSignUpUser(_ id: Int32,_ email: String,_ password: String,_ phone: String,_ callBackResponse: @escaping ([String]) -> ()) {
+    func requestSignUpUser(_ id: Int32,_ email: String,_ password: String,_ phone: String,_ callBackResponse: @escaping ([String]) -> (),_ callBackIndicator: @escaping () -> ()) {
         
         if currentReachabilityStatus != .notReachable {
             
@@ -63,7 +63,7 @@ class SignUpUserAPI: NSObject {
                     }
                 }
                 
-                
+                callBackIndicator()
             }
             task.resume()
         }else {

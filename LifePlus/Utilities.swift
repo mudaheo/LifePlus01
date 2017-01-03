@@ -86,6 +86,11 @@ extension UIColor {
             alpha: alpha
         )
     }
+    
+   public class var greenLifePlus: UIColor
+   {
+        return UIColor.init(hex: "00D14C", alpha: 1.0)
+    }
 }
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kPr-UG-QHo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mmu-Ge-7F9">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -53,7 +53,7 @@
                                             <action selector="handleCancelButton:" destination="Mmu-Ge-7F9" eventType="touchUpInside" id="rl1-s1-XAS"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="G6R-C4-otl">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="G6R-C4-otl">
                                         <rect key="frame" x="280" y="11" width="22" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="dJH-N8-Iht"/>
@@ -125,7 +125,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mn9-Fa-5vc" id="NGC-5K-2Xj">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-cA-fT5">
@@ -673,7 +673,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfu-rr-YWJ">
                                 <rect key="frame" x="110" y="73" width="100" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="User-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="VTR-H6-8t7">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="VTR-H6-8t7">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -817,6 +817,9 @@
                                 <state key="normal" title="ĐĂNG KÝ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="handleRegisterButton:" destination="CGG-cW-cQY" eventType="touchUpInside" id="INK-7G-349"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -845,6 +848,14 @@
                             <constraint firstItem="Tqm-OB-og8" firstAttribute="leading" secondItem="GuL-FA-avU" secondAttribute="leading" constant="16" id="v6o-1q-V4W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="brandImage" destination="VTR-H6-8t7" id="Bn1-xI-5fi"/>
+                        <outlet property="brandNameLable" destination="Tqm-OB-og8" id="VHq-fr-aEV"/>
+                        <outlet property="couponCountLabel" destination="OKS-Sz-cVi" id="7gy-Oo-i75"/>
+                        <outlet property="customerCountLabel" destination="oD7-8t-PLX" id="LeT-Fh-QTk"/>
+                        <outlet property="giftCountLable" destination="qk1-u0-D8o" id="OsW-Qo-Iy6"/>
+                        <outlet property="nameCustomerTextField" destination="9SQ-ja-eFc" id="dtk-PW-gpr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPH-tF-kuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -986,7 +997,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFF-Q2-c99">
                                 <rect key="frame" x="110" y="73" width="100" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="User-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="FGA-JG-pTL">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="FGA-JG-pTL">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -1120,6 +1131,50 @@
             </objects>
             <point key="canvasLocation" x="-300" y="-1080.6338028169014"/>
         </scene>
+        <!--No Connection View Controller-->
+        <scene sceneID="c7j-8o-NMt">
+            <objects>
+                <viewController id="7A9-ce-L4E" customClass="NoConnectionViewController" customModule="LifePlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ufu-fg-fad"/>
+                        <viewControllerLayoutGuide type="bottom" id="abS-JR-P2f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hIT-nD-gw2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="No internet" translatesAutoresizingMaskIntoConstraints="NO" id="Jfi-nd-EcG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhW-EJ-lcW">
+                                <rect key="frame" x="92" y="381" width="137" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Thử lại">
+                                    <color key="titleColor" red="0.0" green="0.81897580623626709" blue="0.29652830958366394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleTryAgainButton:" destination="7A9-ce-L4E" eventType="touchUpInside" id="5G3-uT-JTe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jfi-nd-EcG" firstAttribute="leading" secondItem="hIT-nD-gw2" secondAttribute="leading" id="5iK-V8-f7r"/>
+                            <constraint firstItem="abS-JR-P2f" firstAttribute="top" secondItem="Jfi-nd-EcG" secondAttribute="bottom" id="MPb-oj-SrP"/>
+                            <constraint firstItem="Jfi-nd-EcG" firstAttribute="top" secondItem="hIT-nD-gw2" secondAttribute="top" id="b9P-IJ-KYP"/>
+                            <constraint firstAttribute="trailing" secondItem="Jfi-nd-EcG" secondAttribute="trailing" id="liK-CM-ldL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tryAgainButton" destination="AhW-EJ-lcW" id="2c3-OU-GuE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7P0-AW-vHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="-1081.6901408450703"/>
+        </scene>
         <!--Sign Up Account View Controller-->
         <scene sceneID="iA9-g0-sr5">
             <objects>
@@ -1171,11 +1226,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZg-Jd-FD7">
                                 <rect key="frame" x="110" y="73" width="100" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="User-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="D42-Cc-UbD">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="D42-Cc-UbD">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="J1s-N9-bt2">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="J1s-N9-bt2">
                                         <rect key="frame" x="78" y="8" width="22" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -1497,9 +1552,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="No internet" width="640" height="1096"/>
         <image name="User-placeholder" width="512" height="512"/>
         <image name="checked" width="60" height="60"/>
         <image name="close" width="22" height="22"/>
         <image name="locationPin" width="22" height="22"/>
+        <image name="plus" width="61" height="61"/>
+        <image name="userPlaceholder" width="201" height="200"/>
     </resources>
 </document>

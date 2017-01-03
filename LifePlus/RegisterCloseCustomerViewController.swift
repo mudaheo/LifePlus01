@@ -10,11 +10,34 @@ import UIKit
 
 class RegisterCloseCustomerViewController: UIViewController {
 
+    @IBOutlet weak var brandImage: UIImageView!
+    @IBOutlet weak var brandNameLable: UILabel!
+    @IBOutlet weak var couponCountLabel: UILabel!
+    @IBOutlet weak var giftCountLable: UILabel!
+    @IBOutlet weak var customerCountLabel: UILabel!
+    @IBOutlet weak var nameCustomerTextField: UITextField!
+    
+    //let codeDataStack: CoreDataStack = CoreDataStack()
+    var currentMerchant: Merchant!
+
+
+    var merchantIndex: Int!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadInfo()
 
+    }
+    func loadInfo() {
+        brandImage.image = try! UIImage(data: Data(contentsOf: URL(string: currentMerchant.merchantLogo!)!))
+        brandImage.layer.cornerRadius = brandImage.frame.size.width/2
+        brandImage.clipsToBounds = true
+        brandNameLable.text = currentMerchant.merchantName
+        couponCountLabel.text = "\(currentMerchant.totalCampaignCoupon)"
+        giftCountLable.text = "\(currentMerchant.totalCompaignGift)"
+        customerCountLabel.text = "\(currentMerchant.totalCustomer)"
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,15 +46,11 @@ class RegisterCloseCustomerViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func handleRegisterButton(_ sender: Any) {
+        let confirmSignUp = self.storyboard?.instantiateViewController(withIdentifier: "ConfirmSignUpVC") as! ConfirmSignUpViewController
+        self.present(confirmSignUp, animated: true, completion: nil)
     }
-    */
 
 }
 

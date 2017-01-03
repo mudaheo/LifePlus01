@@ -2,8 +2,8 @@
 //  Merchant+CoreDataClass.swift
 //  LifePlus
 //
-//  Created by Nhân Phùng on 12/29/16.
-//  Copyright © 2016 Javu. All rights reserved.
+//  Created by Nhân Phùng on 1/2/17.
+//  Copyright © 2017 Javu. All rights reserved.
 //
 
 import Foundation
