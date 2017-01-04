@@ -49,8 +49,12 @@ class RegisterCloseCustomerViewController: UIViewController {
 
     @IBAction func handleRegisterButton(_ sender: Any) {
         let confirmSignUp = self.storyboard?.instantiateViewController(withIdentifier: "ConfirmSignUpVC") as! ConfirmSignUpViewController
+        confirmSignUp.currentMerchant = currentMerchant
         self.present(confirmSignUp, animated: true, completion: nil)
     }
 
+    @IBAction func handleCancelButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 

@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         print("OK")
+        deleteMerchantData()
         return true
     }
 
@@ -57,6 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     for object in result{
                         coreDataStack.managedObjectContext.delete(object)
                     }
+                    coreDataStack.saveContext()
                 } catch let error as NSError {
                     fatalError("Error fetching: \(error.localizedDescription)")
                 }

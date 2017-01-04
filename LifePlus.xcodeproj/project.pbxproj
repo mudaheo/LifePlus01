@@ -16,7 +16,6 @@
 		57613C6F1E10D74000275081 /* LifePlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C6E1E10D74000275081 /* LifePlusUITests.swift */; };
 		FE2C80EE1E12528E00E9E105 /* CoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2C80ED1E12528E00E9E105 /* CoreAPI.swift */; };
 		FE2D715D1E111DE8001E2E2B /* ChooseBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */; };
-		FE4D70781E14265C005B689B /* ConfirmSMSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D70771E14265C005B689B /* ConfirmSMSAPI.swift */; };
 		FE50E6F01E19782000F679C4 /* Merchant+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE50E6EE1E19782000F679C4 /* Merchant+CoreDataClass.swift */; };
 		FE50E6F11E19782000F679C4 /* Merchant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE50E6EF1E19782000F679C4 /* Merchant+CoreDataProperties.swift */; };
 		FE50E6F51E19799500F679C4 /* NoConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE50E6F41E19799500F679C4 /* NoConnectionViewController.swift */; };
@@ -25,8 +24,7 @@
 		FE590FDA1E12B43700852E4C /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE590FD91E12B43700852E4C /* ConfirmSignUpViewController.swift */; };
 		FE7772301E154C9800BDC74C /* LifePlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE77722E1E154C9800BDC74C /* LifePlus.xcdatamodeld */; };
 		FE7772321E154CEC00BDC74C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7772311E154CEC00BDC74C /* CoreDataStack.swift */; };
-		FE7772391E15666D00BDC74C /* MerchantListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7772381E15666D00BDC74C /* MerchantListAPI.swift */; };
-		FE868EEE1E13760C009FAFF5 /* SignUpUserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE868EED1E13760C009FAFF5 /* SignUpUserAPI.swift */; };
+		FE9343BA1E1C8F5800468472 /* LifePlusActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9343B91E1C8F5800468472 /* LifePlusActivityIndicator.swift */; };
 		FE99156D1E14B611001FAB19 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99156C1E14B611001FAB19 /* Utilities.swift */; };
 		FE99157B1E14E80D001FAB19 /* LifePlusAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99157A1E14E80D001FAB19 /* LifePlusAlertViewController.swift */; };
 		FE99157D1E151787001FAB19 /* ChooseBrandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99157C1E151787001FAB19 /* ChooseBrandTableViewCell.swift */; };
@@ -66,7 +64,6 @@
 		57613C701E10D74000275081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE2C80ED1E12528E00E9E105 /* CoreAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAPI.swift; sourceTree = "<group>"; };
 		FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBrandViewController.swift; sourceTree = "<group>"; };
-		FE4D70771E14265C005B689B /* ConfirmSMSAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmSMSAPI.swift; sourceTree = "<group>"; };
 		FE50E6EE1E19782000F679C4 /* Merchant+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Merchant+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FE50E6EF1E19782000F679C4 /* Merchant+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Merchant+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FE50E6F41E19799500F679C4 /* NoConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoConnectionViewController.swift; sourceTree = "<group>"; };
@@ -75,8 +72,7 @@
 		FE590FD91E12B43700852E4C /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
 		FE77722F1E154C9800BDC74C /* LifePlus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifePlus.xcdatamodel; sourceTree = "<group>"; };
 		FE7772311E154CEC00BDC74C /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		FE7772381E15666D00BDC74C /* MerchantListAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantListAPI.swift; sourceTree = "<group>"; };
-		FE868EED1E13760C009FAFF5 /* SignUpUserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpUserAPI.swift; sourceTree = "<group>"; };
+		FE9343B91E1C8F5800468472 /* LifePlusActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifePlusActivityIndicator.swift; sourceTree = "<group>"; };
 		FE99156C1E14B611001FAB19 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FE99157A1E14E80D001FAB19 /* LifePlusAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifePlusAlertViewController.swift; sourceTree = "<group>"; };
 		FE99157C1E151787001FAB19 /* ChooseBrandTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBrandTableViewCell.swift; sourceTree = "<group>"; };
@@ -172,40 +168,13 @@
 			name = HomePageViewController;
 			sourceTree = "<group>";
 		};
-		FE041F721E1617670094B77C /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
-				FE590FD51E12AC0200852E4C /* SignUpAccountViewController.swift */,
-				FE868EED1E13760C009FAFF5 /* SignUpUserAPI.swift */,
-			);
-			name = "Sign Up";
-			sourceTree = "<group>";
-		};
-		FE041F731E1617770094B77C /* Confirm SMS */ = {
-			isa = PBXGroup;
-			children = (
-				FE590FD71E12ADAA00852E4C /* ConfirmSMSViewController.swift */,
-				FE4D70771E14265C005B689B /* ConfirmSMSAPI.swift */,
-			);
-			name = "Confirm SMS";
-			sourceTree = "<group>";
-		};
-		FE041F741E1617860094B77C /* Choose Brand */ = {
-			isa = PBXGroup;
-			children = (
-				FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */,
-				FE99157C1E151787001FAB19 /* ChooseBrandTableViewCell.swift */,
-				FE7772381E15666D00BDC74C /* MerchantListAPI.swift */,
-			);
-			name = "Choose Brand";
-			sourceTree = "<group>";
-		};
 		FE2C80EC1E12526900E9E105 /* Support Class */ = {
 			isa = PBXGroup;
 			children = (
 				FE7772311E154CEC00BDC74C /* CoreDataStack.swift */,
 				FE2C80ED1E12528E00E9E105 /* CoreAPI.swift */,
 				FE99156C1E14B611001FAB19 /* Utilities.swift */,
+				FE9343B91E1C8F5800468472 /* LifePlusActivityIndicator.swift */,
 			);
 			name = "Support Class";
 			sourceTree = "<group>";
@@ -215,9 +184,10 @@
 			children = (
 				FE590FD91E12B43700852E4C /* ConfirmSignUpViewController.swift */,
 				FECE02D11E12043E00A77157 /* RegisterCloseCustomerViewController.swift */,
-				FE041F741E1617860094B77C /* Choose Brand */,
-				FE041F731E1617770094B77C /* Confirm SMS */,
-				FE041F721E1617670094B77C /* Sign Up */,
+				FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */,
+				FE99157C1E151787001FAB19 /* ChooseBrandTableViewCell.swift */,
+				FE590FD71E12ADAA00852E4C /* ConfirmSMSViewController.swift */,
+				FE590FD51E12AC0200852E4C /* SignUpAccountViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -377,10 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE7772391E15666D00BDC74C /* MerchantListAPI.swift in Sources */,
 				FE7772321E154CEC00BDC74C /* CoreDataStack.swift in Sources */,
 				FECE02D21E12043E00A77157 /* RegisterCloseCustomerViewController.swift in Sources */,
 				FE99157B1E14E80D001FAB19 /* LifePlusAlertViewController.swift in Sources */,
+				FE9343BA1E1C8F5800468472 /* LifePlusActivityIndicator.swift in Sources */,
 				FE590FDA1E12B43700852E4C /* ConfirmSignUpViewController.swift in Sources */,
 				FE2D715D1E111DE8001E2E2B /* ChooseBrandViewController.swift in Sources */,
 				FE50E6F01E19782000F679C4 /* Merchant+CoreDataClass.swift in Sources */,
@@ -391,8 +361,6 @@
 				FE50E6F51E19799500F679C4 /* NoConnectionViewController.swift in Sources */,
 				FE50E6F11E19782000F679C4 /* Merchant+CoreDataProperties.swift in Sources */,
 				FE99156D1E14B611001FAB19 /* Utilities.swift in Sources */,
-				FE4D70781E14265C005B689B /* ConfirmSMSAPI.swift in Sources */,
-				FE868EEE1E13760C009FAFF5 /* SignUpUserAPI.swift in Sources */,
 				FE2C80EE1E12528E00E9E105 /* CoreAPI.swift in Sources */,
 				FE99157D1E151787001FAB19 /* ChooseBrandTableViewCell.swift in Sources */,
 				57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mmu-Ge-7F9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kPr-UG-QHo">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -121,11 +121,11 @@
                                 <rect key="frame" x="0.0" y="145" width="320" height="423"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="90" id="mn9-Fa-5vc" customClass="ChooseBrandTableViewCell" customModule="LifePlus" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="90" id="mn9-Fa-5vc" customClass="ChooseBrandTableViewCell" customModule="LifePlus" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mn9-Fa-5vc" id="NGC-5K-2Xj">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-cA-fT5">
@@ -648,6 +648,9 @@
                                             <constraint firstAttribute="width" constant="18" id="zb8-zc-jGK"/>
                                         </constraints>
                                         <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="handleCancelButton:" destination="CGG-cW-cQY" eventType="touchUpInside" id="8Ps-aH-7Av"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KHÁCH HÀNG THÂN THIẾT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDB-0F-vWq">
                                         <rect key="frame" x="54" y="12" width="212" height="21"/>
@@ -894,7 +897,7 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="u9u-kE-eYN">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="u9u-kE-eYN">
                                         <rect key="frame" x="279" y="11" width="22" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="4zi-1z-ttZ"/>
@@ -1040,6 +1043,12 @@
                             <constraint firstItem="AN7-w3-4tC" firstAttribute="leading" secondItem="YYJ-LG-ens" secondAttribute="leading" id="zeW-uW-CpY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="brandImage" destination="FGA-JG-pTL" id="6Qh-kV-wsN"/>
+                        <outlet property="brandNameLabel" destination="OAL-r0-X91" id="IKR-GZ-nyO"/>
+                        <outlet property="tickImage" destination="foV-ee-gHp" id="nUI-EP-4QD"/>
+                        <outlet property="userImage" destination="u9u-kE-eYN" id="JI1-IW-OMk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jvq-0x-GSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1134,7 +1143,7 @@
         <!--No Connection View Controller-->
         <scene sceneID="c7j-8o-NMt">
             <objects>
-                <viewController id="7A9-ce-L4E" customClass="NoConnectionViewController" customModule="LifePlus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="noConnectionVC" id="7A9-ce-L4E" customClass="NoConnectionViewController" customModule="LifePlus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ufu-fg-fad"/>
                         <viewControllerLayoutGuide type="bottom" id="abS-JR-P2f"/>
@@ -1255,6 +1264,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mV2-aA-DzQ">
                                 <rect key="frame" x="16" y="226" width="288" height="30"/>
+                                <color key="tintColor" red="0.0" green="0.81897580619999999" blue="0.29652830959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="nn8-yy-5Vh"/>
                                 </constraints>
@@ -1274,12 +1284,13 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gp4-9m-5ON">
                                 <rect key="frame" x="16" y="286" width="288" height="30"/>
+                                <color key="tintColor" red="0.0" green="0.81897580619999999" blue="0.29652830959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="yGK-gi-juE"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SỐ ĐI ĐỘNG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n76-CO-hWY">
                                 <rect key="frame" x="16" y="324" width="98" height="21"/>
@@ -1293,6 +1304,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số di động" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ef6-tD-DYF">
                                 <rect key="frame" x="16" y="346" width="288" height="30"/>
+                                <color key="tintColor" red="0.0" green="0.81897580619999999" blue="0.29652830959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Jej-cw-XNG"/>
                                 </constraints>

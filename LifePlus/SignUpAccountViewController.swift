@@ -16,19 +16,39 @@ class SignUpAccountViewController: UIViewController {
     @IBOutlet weak var passwordUserTextField: UITextField!
     @IBOutlet weak var phoneUserTextField: UITextField!
     @IBOutlet weak var tickImageView: UIImageView!
+    var loadingView: UIView!
     
-    let signUpUser: SignUpUserAPI = SignUpUserAPI()
+    let coreAPI: CoreAPI = CoreAPI()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tickImageView.layer.cornerRadius = tickImageView.frame.size.width/2
         tickImageView.clipsToBounds = true
-
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func loadingIndicatorView(message: String) {
+        loadingView = UIView(frame: CGRect(origin: CGPoint(x: 30, y: self.view.frame.size.height/2 - 25), size: CGSize(width: self.view.frame.width - 60, height: 50)))
+        loadingView.backgroundColor = UIColor.white
+        
+        let indicatorView = LifePlusActivityIndicator(image: UIImage.init(named: "activity_indicator")!, frame: CGRect(origin: CGPoint(x: 0,y: 0), size: CGSize(width: 50, height: 50)))
+        let messageLabel = UILabel(frame: CGRect(origin: CGPoint(x: 60,y: 0), size: CGSize(width: loadingView.frame.size.width - 60, height: 50)))
+        indicatorView.startAnimating()
+        messageLabel.text = message
+        messageLabel.textAlignment = NSTextAlignment.left
+        loadingView.addSubview(indicatorView)
+        loadingView.addSubview(messageLabel)
+        loadingView.layer.cornerRadius = 5.0
+        loadingView.clipsToBounds = true
+       // loadingView.layer.borderColor = UIColor.greenLifePlus.cgColor
+        //loadingView.layer.borderWidth = 0.5
+        self.view.addSubview(loadingView)
+    
     }
     
     //MARK: - Action
@@ -40,32 +60,50 @@ class SignUpAccountViewController: UIViewController {
    
   
     @IBAction func handleSignUpButton(_ sender: Any) {
-        signUpUser.requestSignUpUser(2, emailUserTextField.text!, passwordUserTextField.text!, phoneUserTextField.text!, { (responseValue) in
-            print("1")
+        loadingIndicatorView(message: "Loading ...")
+        
+        var APIInfo: [String: Any] = [String: Any]()
+        APIInfo["nameAPI"] = "signupUser"
+        APIInfo["httpMethod"] = "POST"
+        APIInfo["urlAPI"] = "/merchant/2/signup"
+        APIInfo["headerAPI"] = nil
+        APIInfo["paramBody"] = [
+            "Email":"\(emailUserTextField.text!)",
+            "Password":"\(passwordUserTextField.text!)",
+            "Phone":"\(phoneUserTextField.text!)",
+            "Info":[[
+                "FieldTable": "gender",
+                "Value" :"male"
+                ]]
+        ]
+        
+        coreAPI.requestAPI(APIInfo,saveData: false,sendData: false, completionData: { (response, data) in
             DispatchQueue.main.async {
-                print("2")
-                if responseValue.first! == "noconnection" {
-                    self.alertViewWithMessage("No Internet", "OK")
+            if response.first! == "noconnection" {
+                    let noConnectionView = self.storyboard?.instantiateViewController(withIdentifier: "noConnectionVC") as! NoConnectionViewController
+                    self.present(noConnectionView, animated: true, completion: nil)
                 }else{
                     if self.phoneUserTextField.text! == "" || self.emailUserTextField.text! == "" || self.passwordUserTextField.text! == "" {
                         let message: String = "Hãy điền đầy đủ thông tin"
                         self.alertViewWithMessage(message, "OK")
                     }else{
-                        if responseValue.first! == "success" {
+                        if response.first! == "SUCCESS" {
+                            
                             let confirmSMSView = self.storyboard?.instantiateViewController(withIdentifier: "confirmSMSVC") as! ConfirmSMSViewController
                             confirmSMSView.currentPhoneNumber = self.phoneUserTextField.text!
                             self.present(confirmSMSView, animated: true, completion: nil)
                         }else{
-                            self.alertViewWithMessage(responseValue.first!, "OK")
+                            self.alertViewWithMessage(response.first!, "OK")
                         }
                     }
                 }
             }
-            
-        }){
-            print("3")
-        }
 
+        }) {
+            DispatchQueue.main.async {
+                self.loadingView.removeFromSuperview()
+            }
+        }
     }
     
     private func alertViewWithMessage(_ message: String,_ buttonTitle: String ) {
