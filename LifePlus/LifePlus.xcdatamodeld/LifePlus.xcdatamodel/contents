@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Branch" representedClassName="Branch" syncable="YES">
+        <attribute name="addressBranch" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idBranch" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latBranch" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lngBranch" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nameBranch" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="campaign" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Campaign" inverseName="branchs" inverseEntity="Campaign" syncable="YES"/>
+        <relationship name="merchant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Merchant" inverseName="branchs" inverseEntity="Merchant" syncable="YES"/>
+    </entity>
+    <entity name="Campaign" representedClassName="Campaign" syncable="YES">
+        <attribute name="bannerCampaign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createAtCampaign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionCampaign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distanceCampaign" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="endDateCampaign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupCampaign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasSurvey" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="iDCampaign" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isLoginCampaign" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isReceiveCampaign" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nameCampaign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receiveCampaign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDateCampaign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalPointCampaign" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="typeCampaign" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="branchs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Branch" inverseName="campaign" inverseEntity="Branch" syncable="YES"/>
+        <relationship name="gift" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Gift" inverseName="campaign" inverseEntity="Gift" syncable="YES"/>
+        <relationship name="memberType" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MemberType" inverseName="campaign" inverseEntity="MemberType" syncable="YES"/>
+        <relationship name="merchant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Merchant" inverseName="campaign" inverseEntity="Merchant" syncable="YES"/>
+    </entity>
+    <entity name="Gift" representedClassName="Gift" syncable="YES">
+        <attribute name="descriptionGift" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idGift" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageGift" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameGift" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pointPerAddGift" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rewardAmountGift" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalAmountGift" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="campaign" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Campaign" inverseName="gift" inverseEntity="Campaign" syncable="YES"/>
+    </entity>
+    <entity name="MemberType" representedClassName="MemberType" syncable="YES">
+        <attribute name="colorHexMemberType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionMemberType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idMemberType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageMemberType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameMemberType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="campaign" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Campaign" inverseName="memberType" inverseEntity="Campaign" syncable="YES"/>
+    </entity>
     <entity name="Merchant" representedClassName="Merchant" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="branch" optional="YES" attributeType="Binary" syncable="YES"/>
@@ -24,8 +72,14 @@
         <attribute name="totalCompaignGift" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="totalCustomer" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="branchs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Branch" inverseName="merchant" inverseEntity="Branch" syncable="YES"/>
+        <relationship name="campaign" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Campaign" inverseName="merchant" inverseEntity="Campaign" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Merchant" positionX="-63" positionY="-18" width="128" height="390"/>
+        <element name="Branch" positionX="-54" positionY="144" width="128" height="148"/>
+        <element name="Campaign" positionX="-315" positionY="495" width="128" height="328"/>
+        <element name="Gift" positionX="-2" positionY="384" width="128" height="163"/>
+        <element name="MemberType" positionX="-297" positionY="-0" width="128" height="133"/>
+        <element name="Merchant" positionX="-560" positionY="12" width="128" height="418"/>
     </elements>
 </model>

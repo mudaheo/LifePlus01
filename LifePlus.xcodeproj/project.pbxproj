@@ -14,6 +14,7 @@
 		57613C591E10D74000275081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57613C571E10D74000275081 /* LaunchScreen.storyboard */; };
 		57613C641E10D74000275081 /* LifePlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C631E10D74000275081 /* LifePlusTests.swift */; };
 		57613C6F1E10D74000275081 /* LifePlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C6E1E10D74000275081 /* LifePlusUITests.swift */; };
+		FE1A27BA1E1DE969008C3253 /* DetailCampaignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1A27B91E1DE969008C3253 /* DetailCampaignViewController.swift */; };
 		FE2C80EE1E12528E00E9E105 /* CoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2C80ED1E12528E00E9E105 /* CoreAPI.swift */; };
 		FE2D715D1E111DE8001E2E2B /* ChooseBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */; };
 		FE50E6F01E19782000F679C4 /* Merchant+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE50E6EE1E19782000F679C4 /* Merchant+CoreDataClass.swift */; };
@@ -22,6 +23,20 @@
 		FE590FD61E12AC0200852E4C /* SignUpAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE590FD51E12AC0200852E4C /* SignUpAccountViewController.swift */; };
 		FE590FD81E12ADAA00852E4C /* ConfirmSMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE590FD71E12ADAA00852E4C /* ConfirmSMSViewController.swift */; };
 		FE590FDA1E12B43700852E4C /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE590FD91E12B43700852E4C /* ConfirmSignUpViewController.swift */; };
+		FE6166751E1D486300961AFE /* CampaignByMerchantTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6166731E1D486300961AFE /* CampaignByMerchantTableViewCell1.swift */; };
+		FE6166761E1D486300961AFE /* CampaignByMerchantTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6166741E1D486300961AFE /* CampaignByMerchantTableViewCell1.xib */; };
+		FE6166791E1D488F00961AFE /* CampaignByMerchantTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6166771E1D488F00961AFE /* CampaignByMerchantTableViewCell2.swift */; };
+		FE61667A1E1D488F00961AFE /* CampaignByMerchantTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6166781E1D488F00961AFE /* CampaignByMerchantTableViewCell2.xib */; };
+		FE61667C1E1D48AF00961AFE /* ListCampaignByMerchantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61667B1E1D48AF00961AFE /* ListCampaignByMerchantTableViewController.swift */; };
+		FE61667E1E1D705600961AFE /* CouponInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61667D1E1D705600961AFE /* CouponInfoViewController.swift */; };
+		FE722D2C1E1E3E0B006A2905 /* MemberType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D241E1E3E0B006A2905 /* MemberType+CoreDataClass.swift */; };
+		FE722D2D1E1E3E0B006A2905 /* MemberType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D251E1E3E0B006A2905 /* MemberType+CoreDataProperties.swift */; };
+		FE722D2E1E1E3E0B006A2905 /* Gift+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D261E1E3E0B006A2905 /* Gift+CoreDataClass.swift */; };
+		FE722D2F1E1E3E0B006A2905 /* Gift+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D271E1E3E0B006A2905 /* Gift+CoreDataProperties.swift */; };
+		FE722D301E1E3E0B006A2905 /* Campaign+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D281E1E3E0B006A2905 /* Campaign+CoreDataClass.swift */; };
+		FE722D311E1E3E0B006A2905 /* Campaign+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D291E1E3E0B006A2905 /* Campaign+CoreDataProperties.swift */; };
+		FE722D321E1E3E0B006A2905 /* Branch+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D2A1E1E3E0B006A2905 /* Branch+CoreDataClass.swift */; };
+		FE722D331E1E3E0B006A2905 /* Branch+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D2B1E1E3E0B006A2905 /* Branch+CoreDataProperties.swift */; };
 		FE7772301E154C9800BDC74C /* LifePlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE77722E1E154C9800BDC74C /* LifePlus.xcdatamodeld */; };
 		FE7772321E154CEC00BDC74C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7772311E154CEC00BDC74C /* CoreDataStack.swift */; };
 		FE9343BA1E1C8F5800468472 /* LifePlusActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9343B91E1C8F5800468472 /* LifePlusActivityIndicator.swift */; };
@@ -62,6 +77,7 @@
 		57613C6A1E10D74000275081 /* LifePlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifePlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57613C6E1E10D74000275081 /* LifePlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifePlusUITests.swift; sourceTree = "<group>"; };
 		57613C701E10D74000275081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE1A27B91E1DE969008C3253 /* DetailCampaignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCampaignViewController.swift; sourceTree = "<group>"; };
 		FE2C80ED1E12528E00E9E105 /* CoreAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAPI.swift; sourceTree = "<group>"; };
 		FE2D715C1E111DE8001E2E2B /* ChooseBrandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBrandViewController.swift; sourceTree = "<group>"; };
 		FE50E6EE1E19782000F679C4 /* Merchant+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Merchant+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -70,6 +86,20 @@
 		FE590FD51E12AC0200852E4C /* SignUpAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpAccountViewController.swift; sourceTree = "<group>"; };
 		FE590FD71E12ADAA00852E4C /* ConfirmSMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmSMSViewController.swift; sourceTree = "<group>"; };
 		FE590FD91E12B43700852E4C /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
+		FE6166731E1D486300961AFE /* CampaignByMerchantTableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignByMerchantTableViewCell1.swift; sourceTree = "<group>"; };
+		FE6166741E1D486300961AFE /* CampaignByMerchantTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampaignByMerchantTableViewCell1.xib; sourceTree = "<group>"; };
+		FE6166771E1D488F00961AFE /* CampaignByMerchantTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignByMerchantTableViewCell2.swift; sourceTree = "<group>"; };
+		FE6166781E1D488F00961AFE /* CampaignByMerchantTableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampaignByMerchantTableViewCell2.xib; sourceTree = "<group>"; };
+		FE61667B1E1D48AF00961AFE /* ListCampaignByMerchantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCampaignByMerchantTableViewController.swift; sourceTree = "<group>"; };
+		FE61667D1E1D705600961AFE /* CouponInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponInfoViewController.swift; sourceTree = "<group>"; };
+		FE722D241E1E3E0B006A2905 /* MemberType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MemberType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FE722D251E1E3E0B006A2905 /* MemberType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MemberType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FE722D261E1E3E0B006A2905 /* Gift+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gift+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FE722D271E1E3E0B006A2905 /* Gift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gift+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FE722D281E1E3E0B006A2905 /* Campaign+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Campaign+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FE722D291E1E3E0B006A2905 /* Campaign+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Campaign+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FE722D2A1E1E3E0B006A2905 /* Branch+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Branch+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FE722D2B1E1E3E0B006A2905 /* Branch+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Branch+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FE77722F1E154C9800BDC74C /* LifePlus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifePlus.xcdatamodel; sourceTree = "<group>"; };
 		FE7772311E154CEC00BDC74C /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		FE9343B91E1C8F5800468472 /* LifePlusActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifePlusActivityIndicator.swift; sourceTree = "<group>"; };
@@ -127,6 +157,7 @@
 		57613C4D1E10D73F00275081 /* LifePlus */ = {
 			isa = PBXGroup;
 			children = (
+				FE6166721E1D47BD00961AFE /* Campaign */,
 				FE50E6F31E19796300F679C4 /* Other */,
 				FE50E6F21E19786200F679C4 /* Model */,
 				FE2C80EC1E12526900E9E105 /* Support Class */,
@@ -197,6 +228,14 @@
 			children = (
 				FE50E6EE1E19782000F679C4 /* Merchant+CoreDataClass.swift */,
 				FE50E6EF1E19782000F679C4 /* Merchant+CoreDataProperties.swift */,
+				FE722D241E1E3E0B006A2905 /* MemberType+CoreDataClass.swift */,
+				FE722D251E1E3E0B006A2905 /* MemberType+CoreDataProperties.swift */,
+				FE722D261E1E3E0B006A2905 /* Gift+CoreDataClass.swift */,
+				FE722D271E1E3E0B006A2905 /* Gift+CoreDataProperties.swift */,
+				FE722D281E1E3E0B006A2905 /* Campaign+CoreDataClass.swift */,
+				FE722D291E1E3E0B006A2905 /* Campaign+CoreDataProperties.swift */,
+				FE722D2A1E1E3E0B006A2905 /* Branch+CoreDataClass.swift */,
+				FE722D2B1E1E3E0B006A2905 /* Branch+CoreDataProperties.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -208,6 +247,20 @@
 				FE50E6F41E19799500F679C4 /* NoConnectionViewController.swift */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		FE6166721E1D47BD00961AFE /* Campaign */ = {
+			isa = PBXGroup;
+			children = (
+				FE61667B1E1D48AF00961AFE /* ListCampaignByMerchantTableViewController.swift */,
+				FE6166731E1D486300961AFE /* CampaignByMerchantTableViewCell1.swift */,
+				FE6166741E1D486300961AFE /* CampaignByMerchantTableViewCell1.xib */,
+				FE6166771E1D488F00961AFE /* CampaignByMerchantTableViewCell2.swift */,
+				FE6166781E1D488F00961AFE /* CampaignByMerchantTableViewCell2.xib */,
+				FE61667D1E1D705600961AFE /* CouponInfoViewController.swift */,
+				FE1A27B91E1DE969008C3253 /* DetailCampaignViewController.swift */,
+			);
+			name = Campaign;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,8 +373,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE61667A1E1D488F00961AFE /* CampaignByMerchantTableViewCell2.xib in Resources */,
 				57613C591E10D74000275081 /* LaunchScreen.storyboard in Resources */,
 				57613C561E10D74000275081 /* Assets.xcassets in Resources */,
+				FE6166761E1D486300961AFE /* CampaignByMerchantTableViewCell1.xib in Resources */,
 				57613C541E10D74000275081 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,22 +402,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6166751E1D486300961AFE /* CampaignByMerchantTableViewCell1.swift in Sources */,
 				FE7772321E154CEC00BDC74C /* CoreDataStack.swift in Sources */,
+				FE722D2E1E1E3E0B006A2905 /* Gift+CoreDataClass.swift in Sources */,
 				FECE02D21E12043E00A77157 /* RegisterCloseCustomerViewController.swift in Sources */,
 				FE99157B1E14E80D001FAB19 /* LifePlusAlertViewController.swift in Sources */,
+				FE722D321E1E3E0B006A2905 /* Branch+CoreDataClass.swift in Sources */,
 				FE9343BA1E1C8F5800468472 /* LifePlusActivityIndicator.swift in Sources */,
+				FE722D301E1E3E0B006A2905 /* Campaign+CoreDataClass.swift in Sources */,
 				FE590FDA1E12B43700852E4C /* ConfirmSignUpViewController.swift in Sources */,
 				FE2D715D1E111DE8001E2E2B /* ChooseBrandViewController.swift in Sources */,
+				FE1A27BA1E1DE969008C3253 /* DetailCampaignViewController.swift in Sources */,
 				FE50E6F01E19782000F679C4 /* Merchant+CoreDataClass.swift in Sources */,
 				FE590FD61E12AC0200852E4C /* SignUpAccountViewController.swift in Sources */,
 				FE590FD81E12ADAA00852E4C /* ConfirmSMSViewController.swift in Sources */,
+				FE722D2D1E1E3E0B006A2905 /* MemberType+CoreDataProperties.swift in Sources */,
 				57613C511E10D74000275081 /* ViewController.swift in Sources */,
 				FE7772301E154C9800BDC74C /* LifePlus.xcdatamodeld in Sources */,
 				FE50E6F51E19799500F679C4 /* NoConnectionViewController.swift in Sources */,
 				FE50E6F11E19782000F679C4 /* Merchant+CoreDataProperties.swift in Sources */,
+				FE722D2C1E1E3E0B006A2905 /* MemberType+CoreDataClass.swift in Sources */,
 				FE99156D1E14B611001FAB19 /* Utilities.swift in Sources */,
+				FE722D2F1E1E3E0B006A2905 /* Gift+CoreDataProperties.swift in Sources */,
+				FE6166791E1D488F00961AFE /* CampaignByMerchantTableViewCell2.swift in Sources */,
+				FE722D331E1E3E0B006A2905 /* Branch+CoreDataProperties.swift in Sources */,
 				FE2C80EE1E12528E00E9E105 /* CoreAPI.swift in Sources */,
+				FE61667E1E1D705600961AFE /* CouponInfoViewController.swift in Sources */,
 				FE99157D1E151787001FAB19 /* ChooseBrandTableViewCell.swift in Sources */,
+				FE722D311E1E3E0B006A2905 /* Campaign+CoreDataProperties.swift in Sources */,
+				FE61667C1E1D48AF00961AFE /* ListCampaignByMerchantTableViewController.swift in Sources */,
 				57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
