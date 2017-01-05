@@ -8,29 +8,22 @@
 
 import UIKit
 
-//4.
-class FoodTableViewController: UITableViewController, CampaignControllerDelegate {
+class FoodTableViewController: UITableViewController {
     
     @IBOutlet var foodTableView: UITableView!
     var foodArr = [Food]()
-    
-    //5.
     var campaign = CampaignController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let nib = UINib(nibName: "CustomCell", bundle: nil)
         foodTableView.register(nib, forCellReuseIdentifier: "Cell")
-        //7-8.
-        campaign.delegate = self
-        campaign.getCampaignWithGroupName(groupName: "group=food")
-    }
-    //6.
-    func getDataWithCampaignFromAPI(dataArr: Array<Any>) {
-        getData(dataArr: dataArr)
-        DispatchQueue.main.async {
-            self.foodTableView.reloadData()
+        campaign.getCampaignWithGroupName(groupName: "group=food") { (
+            arayData) in
+            self.getData(dataArr: arayData)
+            DispatchQueue.main.async {
+                self.foodTableView.reloadData()
+            }
         }
     }
     

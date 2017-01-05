@@ -8,17 +8,9 @@
 
 import UIKit
 
-//1.
-protocol CampaignControllerDelegate {
-    func getDataWithCampaignFromAPI(dataArr: Array<Any>)
-}
-
 class CampaignController: NSObject {
-    
-    //2.
-    var delegate: CampaignControllerDelegate?
-    
-    func getCampaignWithGroupName(groupName: String) {
+
+    func getCampaignWithGroupName(groupName: String, callBack: @escaping (Array<Any>) -> ()) {
         let requestURL = NSMutableURLRequest()
         requestURL.url = URL(string: "https://api.lifeplusloyalty.vn/campaign?\(groupName)")
         requestURL.httpMethod = "GET"
@@ -29,8 +21,7 @@ class CampaignController: NSObject {
             if (error == nil)  && (httpResponse?.statusCode == 200) {
                 let dataJSON = try? JSONSerialization.jsonObject(with: data!) as! Dictionary<String, Any>
                 let dataArr = dataJSON?["Data"] as! Array<Any>
-                //3.
-                self.delegate?.getDataWithCampaignFromAPI(dataArr: dataArr)
+                callBack(dataArr)
             } else {
                 let dataStatus = try? JSONSerialization.jsonObject(with: data!) as! Dictionary<String, Any>
                 print(dataStatus!)

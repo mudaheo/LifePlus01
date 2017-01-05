@@ -19,40 +19,66 @@ class HomePageViewController: SJSegmentedViewController {
             let headerController = storyboard.instantiateViewController(withIdentifier: "HeaderViewController")
             
             let foodViewController = storyboard.instantiateViewController(withIdentifier: "FoodTableViewController")
-            foodViewController.title = "Ăn gì?"
             
+            
+            
+            
+            // Custom ImageView
+            let view = UIImageView()
+            
+            view.image = UIImage(named: "ic_muagiNoIcon_act")
+            view.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+            foodViewController.navigationItem.titleView = view
+            
+            
+            
+            
+            
+            
+            foodViewController.title = "Ăn gì?"
             let buyViewController = storyboard.instantiateViewController(withIdentifier: "BuyTableViewController")
+            
             buyViewController.title = "Mua gì?"
+            //          buyViewController.navigationItem.titleView = getSegmentTabWithImage("ic_muagiNoIcon_act")
             
             let placeViewController = storyboard.instantiateViewController(withIdentifier: "PlaceTableViewController")
             placeViewController.title = "Đi đâu?"
-            
-//            let view = getSegmentTabWithImage("ic_angiNoIcon_act")
-//            foodViewController.navigationItem.titleView = view
+            //          placeViewController.navigationItem.titleView = getSegmentTabWithImage("ic_didauNoIcon_act")
             
             headerViewController = headerController
             segmentControllers = [foodViewController, buyViewController, placeViewController]
-            headerViewHeight = 300
-            selectedSegmentViewHeight = 5.0
-            segmentTitleColor = .gray
-            segmentViewHeight = 70
+            headerViewHeight = self.view.frame.height / 3
             
-//selectedSegmentViewColor
-            
+            segmentViewHeight = 50.0
             segmentShadow = SJShadow.light()
             delegate = self
-        
+            selectedSegmentViewHeight = 0.0
         }
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named:"Banner"), for: .default)
         super.viewDidLoad()
+        searchButton()
     }
     
-    //Use for custom Tab view.
+    func searchButton() {
+        let searchButton = UIButton()
+        searchButton.frame = CGRect(x: view.frame.size.width - 80.0, y: view.frame.height - 120.0, width: 50.0, height: 50.0)
+        searchButton.setImage(UIImage(named: "btn_search"), for: .normal)
+        searchButton.addTarget(self, action: #selector(searchClick), for: .touchUpInside)
+        view.addSubview(searchButton)
+    }
+    
+    @objc func searchClick() {
+        let searchView = self.storyboard?.instantiateViewController(withIdentifier: "SearchViewController")
+        self.navigationController?.pushViewController(searchView!, animated: true)
+    }
+    
+    //Use for custom Tab view. (Not yet use...)
     func getSegmentTabWithImage(_ imageName: String) -> UIView {
         let view = UIImageView()
-        view.frame.size.width = 150//self.view.frame.width / 3
-//        view.contentMode = .scaleToFill
-        view.backgroundColor = UIColor(patternImage: UIImage(named: imageName)!)
+        view.frame.size.width  = 100
+        view.image = UIImage(named: imageName)
+        view.contentMode = .scaleAspectFit
+        view.backgroundColor = .white
         
         return view
     }
@@ -72,17 +98,41 @@ extension HomePageViewController: SJSegmentedViewControllerDelegate{
         if segments.count > 0 {
             selectedSegment = segments[index]
             selectedSegment?.titleColor(.red)
-        }
-        switch index {
-        case 0:
-            print("0")
-        case 1:
-            print("1")
-        case 2:
-            print("2")
-        default:
-            print("Error")
+
+            
+            
+            //            let segment1 = segmentControllers[index]
+            //            if index == 0 {
+            //                let view = UIImageView()
+            ////                view.frame.size.width  = 100
+            //                view.image = UIImage(named: "ic_angiNoIcon_act")
+            //                view.contentMode = .scaleAspectFit
+            //                view.backgroundColor = .blue
+            //                segment1.navigationItem.titleView = view
+            //                print("0")
+            //
+            //            }
+            //            if index == 1 {
+            //                let view = UIImageView()
+            //                view.frame.size.width  = 100
+            //                view.image = UIImage(named: "ic_muagiNoIcon_act")
+            //                view.contentMode = .scaleAspectFit
+            //                view.backgroundColor = .white
+            //                segment1.navigationItem.titleView = view
+            //                print("1")
+            //            }
+            //            if index == 2 {
+            //                let view = UIImageView()
+            //                view.frame.size.width  = 100
+            //                view.image = UIImage(named: "ic_didauNoIcon_act")
+            //                view.contentMode = .scaleAspectFit
+            //                view.backgroundColor = .white
+            //                segment1.navigationItem.titleView = view
+            //                print("2")
+            //            }
+            
         }
     }
+    
 }
 

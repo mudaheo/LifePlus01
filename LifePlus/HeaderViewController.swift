@@ -13,37 +13,25 @@ class HeaderViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     var imageArr = [String]()
-    
-    
-    
     var campaign = CampaignController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        campaign.delegate = self
-        campaign.getCampaignWithGroupName(groupName: "isFeature=true")
-//        scrollView.auk.show(image: UIImage(named: "OT")!)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-}
 
-extension HeaderViewController: CampaignControllerDelegate {
-    func getDataWithCampaignFromAPI(dataArr: Array<Any>) {
-        getData(dataArr: dataArr)
-        DispatchQueue.main.async {
-            self.scrollView.auk.startAutoScroll(delaySeconds: 3.0)
-            self.scrollView.auk.settings.contentMode = .scaleToFill
-            self.scrollView.auk.settings.pageControl.cornerRadius = 0.0
-            for item in self.imageArr {
-                self.scrollView.auk.show(url: item)
+        campaign.getCampaignWithGroupName(groupName: "isFeature=true") { (dataArr) in
+            self.getData(dataArr: dataArr)
+            DispatchQueue.main.async {
+                self.scrollView.auk.startAutoScroll(delaySeconds: 3.0)
+                self.scrollView.auk.settings.contentMode = .scaleToFill
+                self.scrollView.auk.settings.pageControl.cornerRadius = 0.0
+//                self.scrollView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height / 10)
+                for item in self.imageArr {
+                    self.scrollView.auk.show(url: item)
+                }
             }
         }
     }
+    
     
     func getData(dataArr: Array<Any>) {
         if imageArr.count == 0 {
@@ -54,8 +42,9 @@ extension HeaderViewController: CampaignControllerDelegate {
             }
         }
     }
-}
-
-extension HeaderViewController: UIScrollViewDelegate {
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
     
 }

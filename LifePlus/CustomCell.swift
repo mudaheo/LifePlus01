@@ -12,11 +12,14 @@ class CustomCell: UITableViewCell {
     
     @IBOutlet weak var imvItem: UIImageView!
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var imvMerchant: UIImageView!
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        // Initialization codePRIN
+        imvMerchant.layer.cornerRadius = imvMerchant.frame.width / 2
+        imvMerchant.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

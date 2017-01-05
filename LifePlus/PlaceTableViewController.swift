@@ -21,13 +21,29 @@ class PlaceTableViewController: UITableViewController {
         let nib = UINib(nibName: "CustomCell", bundle: nil)
         placeTableView.register(nib, forCellReuseIdentifier: "Cell")
         
-        camp.delegate = self
-        camp.getCampaignWithGroupName(groupName: "group=place")
+        camp.getCampaignWithGroupName(groupName: "group=place") { (dataArr) in
+            self.getData(dataArr: dataArr)
+            DispatchQueue.main.async {
+                self.placeTableView.reloadData()
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+        func getData(dataArr: Array<Any>) {
+            if placeArr.count == 0 {
+                for item in dataArr{
+                    let item = item as! Dictionary<String, Any>
+                    let aPlace = Place()
+                    aPlace.name = (item["Name"] as? String)!
+                    aPlace.imageLink = (item["Banner"] as? String)!
+                    placeArr.append(aPlace)
+                }
+            }
+        }
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,26 +58,5 @@ class PlaceTableViewController: UITableViewController {
         cell.imvItem.image = try! UIImage(data: Data(contentsOf: URL(string: aPlace.imageLink)!))
         
         return cell
-    }
-}
-
-extension PlaceTableViewController: CampaignControllerDelegate {
-    func getDataWithCampaignFromAPI(dataArr: Array<Any>) {
-        getData(dataArr: dataArr)
-        DispatchQueue.main.async {
-            self.placeTableView.reloadData()
-        }
-    }
-    
-    func getData(dataArr: Array<Any>) {
-        if placeArr.count == 0 {
-            for item in dataArr{
-                let item = item as! Dictionary<String, Any>
-                let aPlace = Place()
-                aPlace.name = (item["Name"] as? String)!
-                aPlace.imageLink = (item["Banner"] as? String)!
-                placeArr.append(aPlace)
-            }
-        }
     }
 }

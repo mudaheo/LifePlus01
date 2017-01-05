@@ -26,6 +26,8 @@
 		57AE57281E13AAE2001C86B8 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE57271E13AAE2001C86B8 /* Place.swift */; };
 		57AE572E1E13C1FA001C86B8 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE572C1E13C1FA001C86B8 /* CustomCell.swift */; };
 		57AE572F1E13C1FA001C86B8 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AE572D1E13C1FA001C86B8 /* CustomCell.xib */; };
+		57FDFC0E1E1B4A0200FBBEA9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FDFC0D1E1B4A0200FBBEA9 /* SearchViewController.swift */; };
+		57FDFC141E1B8F6E00FBBEA9 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FDFC131E1B8F6E00FBBEA9 /* Campaign.swift */; };
 		782A33E0AA441998702FEDE4 /* Pods_LifePlusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEE456E2FDD9DD750B5C982 /* Pods_LifePlusUITests.framework */; };
 		7C7F3DEB924C1A5147546D13 /* Pods_LifePlusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9DCB92C8A72F809458C7C5 /* Pods_LifePlusTests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		57AE57271E13AAE2001C86B8 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		57AE572C1E13C1FA001C86B8 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		57AE572D1E13C1FA001C86B8 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		57FDFC0D1E1B4A0200FBBEA9 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		57FDFC131E1B8F6E00FBBEA9 /* Campaign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		7B9353A6C6CC50618E7466E4 /* Pods-LifePlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifePlusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifePlusTests/Pods-LifePlusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		80613D0B756F8006936B624E /* Pods_LifePlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifePlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9DCB92C8A72F809458C7C5 /* Pods_LifePlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifePlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,7 @@
 		57613C4D1E10D73F00275081 /* LifePlus */ = {
 			isa = PBXGroup;
 			children = (
+				57FDFC0C1E1B49DD00FBBEA9 /* SearchPage */,
 				57F5F9D91E10E8D3005E4BD0 /* HomePage */,
 				57613C4E1E10D74000275081 /* AppDelegate.swift */,
 				57613C501E10D74000275081 /* ViewController.swift */,
@@ -203,6 +208,7 @@
 				57AE57231E13AAD5001C86B8 /* Food.swift */,
 				57AE57251E13AADD001C86B8 /* Buy.swift */,
 				57AE57271E13AAE2001C86B8 /* Place.swift */,
+				57FDFC131E1B8F6E00FBBEA9 /* Campaign.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -215,6 +221,14 @@
 				57AE57211E13AA0F001C86B8 /* ViewController */,
 			);
 			name = HomePage;
+			sourceTree = "<group>";
+		};
+		57FDFC0C1E1B49DD00FBBEA9 /* SearchPage */ = {
+			isa = PBXGroup;
+			children = (
+				57FDFC0D1E1B4A0200FBBEA9 /* SearchViewController.swift */,
+			);
+			name = SearchPage;
 			sourceTree = "<group>";
 		};
 		E877E03D58FBBD4744BDDF88 /* Pods */ = {
@@ -523,6 +537,8 @@
 				570A17031E137864000E3199 /* PlaceTableViewController.swift in Sources */,
 				570A16FD1E137692000E3199 /* HeaderViewController.swift in Sources */,
 				570A17011E13785E000E3199 /* BuyTableViewController.swift in Sources */,
+				57FDFC0E1E1B4A0200FBBEA9 /* SearchViewController.swift in Sources */,
+				57FDFC141E1B8F6E00FBBEA9 /* Campaign.swift in Sources */,
 				57AE57241E13AAD5001C86B8 /* Food.swift in Sources */,
 				570A16FF1E137856000E3199 /* FoodTableViewController.swift in Sources */,
 				57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */,
