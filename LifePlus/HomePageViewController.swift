@@ -15,44 +15,30 @@ class HomePageViewController: SJSegmentedViewController {
     
     override func viewDidLoad() {
         
+        let view1 = UIView()
+        view1.frame = CGRect(x: 0, y: 0, width: 100, height: 30)
+        
         if let storyboard = self.storyboard {
             let headerController = storyboard.instantiateViewController(withIdentifier: "HeaderViewController")
             
             let foodViewController = storyboard.instantiateViewController(withIdentifier: "FoodTableViewController")
-            
-            
-            
-            
-            // Custom ImageView
-            let view = UIImageView()
-            
-            view.image = UIImage(named: "ic_muagiNoIcon_act")
-            view.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
-            foodViewController.navigationItem.titleView = view
-            
-            
-            
-            
-            
-            
             foodViewController.title = "Ăn gì?"
-            let buyViewController = storyboard.instantiateViewController(withIdentifier: "BuyTableViewController")
             
+            let buyViewController = storyboard.instantiateViewController(withIdentifier: "BuyTableViewController")
             buyViewController.title = "Mua gì?"
-            //          buyViewController.navigationItem.titleView = getSegmentTabWithImage("ic_muagiNoIcon_act")
             
             let placeViewController = storyboard.instantiateViewController(withIdentifier: "PlaceTableViewController")
             placeViewController.title = "Đi đâu?"
-            //          placeViewController.navigationItem.titleView = getSegmentTabWithImage("ic_didauNoIcon_act")
             
             headerViewController = headerController
             segmentControllers = [foodViewController, buyViewController, placeViewController]
             headerViewHeight = self.view.frame.height / 3
             
             segmentViewHeight = 50.0
-            segmentShadow = SJShadow.light()
             delegate = self
             selectedSegmentViewHeight = 0.0
+            segmentTitleColor = .darkGray
+            segmentBackgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
         }
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named:"Banner"), for: .default)
         super.viewDidLoad()
@@ -72,65 +58,49 @@ class HomePageViewController: SJSegmentedViewController {
         self.navigationController?.pushViewController(searchView!, animated: true)
     }
     
-    //Use for custom Tab view. (Not yet use...)
-    func getSegmentTabWithImage(_ imageName: String) -> UIView {
-        let view = UIImageView()
-        view.frame.size.width  = 100
-        view.image = UIImage(named: imageName)
-        view.contentMode = .scaleAspectFit
-        view.backgroundColor = .white
-        
-        return view
-    }
+    //    func getSegmentTabWithImage(_ imageName: String) -> UIView {
+    //        let view = UIImageView()
+    //        view.frame.size.width  = 100
+    //        view.image = UIImage(named: imageName)
+    //        view.contentMode = .scaleAspectFit
+    //        view.backgroundColor = .white
+    //
+    //        return view
+    //    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 }
 
 extension HomePageViewController: SJSegmentedViewControllerDelegate{
     func didMoveToPage(_ controller: UIViewController, segment: SJSegmentTab?, index: Int) {
+        
         if selectedSegment != nil {
-            selectedSegment?.titleColor(.lightGray)
+            selectedSegment?.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+            selectedSegment?.titleColor(.darkGray)
         }
         if segments.count > 0 {
             selectedSegment = segments[index]
-            selectedSegment?.titleColor(.red)
-
+            selectedSegment?.titleColor(.init(white: 1, alpha: 0))
+            UIGraphicsBeginImageContext(self.view.frame.size)
+            var image = UIImage()
+    
+            if index == 0 {
+                image = UIImage(named: "ic_angiNoIcon_act")!
+            }
+            if index == 1 {
+                image = UIImage(named: "ic_muagiNoIcon_act")!
+            }
+            if index == 2 {
+                image = UIImage(named: "ic_didauNoIcon_act")!
+            }
             
-            
-            //            let segment1 = segmentControllers[index]
-            //            if index == 0 {
-            //                let view = UIImageView()
-            ////                view.frame.size.width  = 100
-            //                view.image = UIImage(named: "ic_angiNoIcon_act")
-            //                view.contentMode = .scaleAspectFit
-            //                view.backgroundColor = .blue
-            //                segment1.navigationItem.titleView = view
-            //                print("0")
-            //
-            //            }
-            //            if index == 1 {
-            //                let view = UIImageView()
-            //                view.frame.size.width  = 100
-            //                view.image = UIImage(named: "ic_muagiNoIcon_act")
-            //                view.contentMode = .scaleAspectFit
-            //                view.backgroundColor = .white
-            //                segment1.navigationItem.titleView = view
-            //                print("1")
-            //            }
-            //            if index == 2 {
-            //                let view = UIImageView()
-            //                view.frame.size.width  = 100
-            //                view.image = UIImage(named: "ic_didauNoIcon_act")
-            //                view.contentMode = .scaleAspectFit
-            //                view.backgroundColor = .white
-            //                segment1.navigationItem.titleView = view
-            //                print("2")
-            //            }
-            
+            image.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.size.width/3/*120*/, height: 50))
+            image = UIGraphicsGetImageFromCurrentImageContext()!
+            UIGraphicsEndImageContext()
+            selectedSegment?.backgroundColor = UIColor(patternImage: image)
         }
     }
     

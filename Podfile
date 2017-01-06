@@ -9,6 +9,7 @@ target 'LifePlus' do
   pod 'SJSegmentedScrollView', '1.3.5'
   pod 'moa', '~> 8.0'
   pod 'Auk', '~> 7.0'
+  pod 'MTBBarcodeScanner'
 
   target 'LifePlusTests' do
     inherit! :search_paths

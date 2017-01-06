@@ -13,6 +13,7 @@
 		570A17011E13785E000E3199 /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A17001E13785E000E3199 /* BuyTableViewController.swift */; };
 		570A17031E137864000E3199 /* PlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A17021E137864000E3199 /* PlaceTableViewController.swift */; };
 		570A17051E137A68000E3199 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A17041E137A68000E3199 /* HomePageViewController.swift */; };
+		570F18641E1F2AED0086BEDA /* BarCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570F18631E1F2AED0086BEDA /* BarCodeReaderViewController.swift */; };
 		5731CED41E160FF400D0671F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5731CED31E160FF400D0671F /* Assets.xcassets */; };
 		57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C4E1E10D74000275081 /* AppDelegate.swift */; };
 		57613C511E10D74000275081 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57613C501E10D74000275081 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		570A17001E13785E000E3199 /* BuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
 		570A17021E137864000E3199 /* PlaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewController.swift; sourceTree = "<group>"; };
 		570A17041E137A68000E3199 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		570F18631E1F2AED0086BEDA /* BarCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarCodeReaderViewController.swift; sourceTree = "<group>"; };
 		5731CED31E160FF400D0671F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57613C4B1E10D73F00275081 /* LifePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57613C4E1E10D74000275081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		57613C4D1E10D73F00275081 /* LifePlus */ = {
 			isa = PBXGroup;
 			children = (
+				57A9D7811E1E4FB2008DACB8 /* BarCodeReader */,
 				57FDFC0C1E1B49DD00FBBEA9 /* SearchPage */,
 				57F5F9D91E10E8D3005E4BD0 /* HomePage */,
 				57613C4E1E10D74000275081 /* AppDelegate.swift */,
@@ -178,6 +181,14 @@
 				57613C701E10D74000275081 /* Info.plist */,
 			);
 			path = LifePlusUITests;
+			sourceTree = "<group>";
+		};
+		57A9D7811E1E4FB2008DACB8 /* BarCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				570F18631E1F2AED0086BEDA /* BarCodeReaderViewController.swift */,
+			);
+			name = BarCodeReader;
 			sourceTree = "<group>";
 		};
 		57ADE1291E13F68D00CEE0DC /* Controller */ = {
@@ -543,6 +554,7 @@
 				570A16FF1E137856000E3199 /* FoodTableViewController.swift in Sources */,
 				57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */,
 				57AE57281E13AAE2001C86B8 /* Place.swift in Sources */,
+				570F18641E1F2AED0086BEDA /* BarCodeReaderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

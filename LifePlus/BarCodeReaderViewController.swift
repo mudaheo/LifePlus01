@@ -7,29 +7,36 @@
 //
 
 import UIKit
+import MTBBarcodeScanner
 
 class BarCodeReaderViewController: UIViewController {
-
+    
+    @IBOutlet weak var viewPreView: UIView!
+    @IBOutlet weak var lblCode: UILabel!
+    var scanner: MTBBarcodeScanner?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        scanner = MTBBarcodeScanner(previewView: viewPreView)
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.scanner?.startScanning(resultBlock: { codes in
+            let codesObjects = codes as! [AVMetadataMachineReadableCodeObject]?
+            for code in codesObjects! {
+                let stringValue = code.stringValue!
+                self.lblCode.text = stringValue
+            }
+        }, error: nil)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        scanner?.stopScanning()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

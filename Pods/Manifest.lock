@@ -2,18 +2,21 @@ PODS:
   - Auk (7.0.1):
     - moa
   - moa (8.0.2)
+  - MTBBarcodeScanner (3.1.0)
   - SJSegmentedScrollView (1.3.5)
 
 DEPENDENCIES:
   - Auk (~> 7.0)
   - moa (~> 8.0)
+  - MTBBarcodeScanner
   - SJSegmentedScrollView (= 1.3.5)
 
 SPEC CHECKSUMS:
   Auk: 6f8c4e93427d0d02641263776dd3b66ae4050903
   moa: 73d2dd56fe838a31e255c64b7873d2c2fbc71076
+  MTBBarcodeScanner: 6d397077f1a4a886050df8e66584a59a1dc429e7
   SJSegmentedScrollView: 20e4c2e5489329e06c483f8824dbb55d055e9ffa
 
-PODFILE CHECKSUM: 6a150ad23d3f36fb8011277a4373b46328f78709
+PODFILE CHECKSUM: e159bbffd183465d76e60dcaeca7dbbfda870312
 
 COCOAPODS: 1.1.1
