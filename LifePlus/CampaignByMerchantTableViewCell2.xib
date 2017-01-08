@@ -11,11 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="KGk-i7-Jjw" customClass="CampaignByMerchantTableViewCell2" customModule="LifePlus" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell2" rowHeight="250" id="KGk-i7-Jjw" customClass="CampaignByMerchantTableViewCell2" customModule="LifePlus" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="249.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="249"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xGh-W5-z1Q">
@@ -63,6 +63,10 @@
                     <constraint firstAttribute="trailing" secondItem="xGh-W5-z1Q" secondAttribute="trailing" id="yxF-uf-fhs"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="campaignImageView" destination="xGh-W5-z1Q" id="wcU-kY-9YH"/>
+                <outlet property="campaignNameLabel" destination="7m3-M4-iF1" id="W7z-JQ-4Vb"/>
+            </connections>
             <point key="canvasLocation" x="-88" y="-55"/>
         </tableViewCell>
     </objects>

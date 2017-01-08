@@ -1,18 +1,17 @@
 //
-//  CampaignByMerchantTableViewCell2.swift
+//  BranchMapTableViewCell.swift
 //  LifePlus
 //
-//  Created by Nhân Phùng on 1/4/17.
+//  Created by Nhân Phùng on 1/8/17.
 //  Copyright © 2017 Javu. All rights reserved.
 //
 
 import UIKit
 
-class CampaignByMerchantTableViewCell2: UITableViewCell {
-    
-    @IBOutlet weak var campaignImageView: UIImageView!
-    @IBOutlet weak var campaignNameLabel: UILabel!
+class BranchMapTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var branchAddressLabel: UILabel!
+    @IBOutlet weak var myView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,5 +22,5 @@ class CampaignByMerchantTableViewCell2: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

@@ -29,12 +29,15 @@
 		FE61667A1E1D488F00961AFE /* CampaignByMerchantTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6166781E1D488F00961AFE /* CampaignByMerchantTableViewCell2.xib */; };
 		FE61667C1E1D48AF00961AFE /* ListCampaignByMerchantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61667B1E1D48AF00961AFE /* ListCampaignByMerchantTableViewController.swift */; };
 		FE61667E1E1D705600961AFE /* CouponInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61667D1E1D705600961AFE /* CouponInfoViewController.swift */; };
+		FE6F86961E213A73004B9AA0 /* MemberMerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F86951E213A73004B9AA0 /* MemberMerchantViewController.swift */; };
+		FE6F86981E213A99004B9AA0 /* MemberMerchantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F86971E213A99004B9AA0 /* MemberMerchantTableViewCell.swift */; };
+		FE6F869A1E215818004B9AA0 /* MemberTabNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F86991E215818004B9AA0 /* MemberTabNavigationController.swift */; };
+		FE6F869D1E2160E1004B9AA0 /* Campaign+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F869B1E2160E1004B9AA0 /* Campaign+CoreDataClass.swift */; };
+		FE6F869E1E2160E1004B9AA0 /* Campaign+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F869C1E2160E1004B9AA0 /* Campaign+CoreDataProperties.swift */; };
 		FE722D2C1E1E3E0B006A2905 /* MemberType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D241E1E3E0B006A2905 /* MemberType+CoreDataClass.swift */; };
 		FE722D2D1E1E3E0B006A2905 /* MemberType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D251E1E3E0B006A2905 /* MemberType+CoreDataProperties.swift */; };
 		FE722D2E1E1E3E0B006A2905 /* Gift+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D261E1E3E0B006A2905 /* Gift+CoreDataClass.swift */; };
 		FE722D2F1E1E3E0B006A2905 /* Gift+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D271E1E3E0B006A2905 /* Gift+CoreDataProperties.swift */; };
-		FE722D301E1E3E0B006A2905 /* Campaign+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D281E1E3E0B006A2905 /* Campaign+CoreDataClass.swift */; };
-		FE722D311E1E3E0B006A2905 /* Campaign+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D291E1E3E0B006A2905 /* Campaign+CoreDataProperties.swift */; };
 		FE722D321E1E3E0B006A2905 /* Branch+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D2A1E1E3E0B006A2905 /* Branch+CoreDataClass.swift */; };
 		FE722D331E1E3E0B006A2905 /* Branch+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D2B1E1E3E0B006A2905 /* Branch+CoreDataProperties.swift */; };
 		FE7772301E154C9800BDC74C /* LifePlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE77722E1E154C9800BDC74C /* LifePlus.xcdatamodeld */; };
@@ -43,6 +46,10 @@
 		FE99156D1E14B611001FAB19 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99156C1E14B611001FAB19 /* Utilities.swift */; };
 		FE99157B1E14E80D001FAB19 /* LifePlusAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99157A1E14E80D001FAB19 /* LifePlusAlertViewController.swift */; };
 		FE99157D1E151787001FAB19 /* ChooseBrandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99157C1E151787001FAB19 /* ChooseBrandTableViewCell.swift */; };
+		FECB2A4E1E2281E100C7826D /* BranchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECB2A4D1E2281E100C7826D /* BranchMapViewController.swift */; };
+		FECB2A501E2283B100C7826D /* BranchMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECB2A4F1E2283B100C7826D /* BranchMapTableViewCell.swift */; };
+		FECB2A531E228F7D00C7826D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECB2A521E228F7D00C7826D /* CoreLocation.framework */; };
+		FECB2A551E228F8300C7826D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECB2A541E228F8300C7826D /* MapKit.framework */; };
 		FECE02D21E12043E00A77157 /* RegisterCloseCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE02D11E12043E00A77157 /* RegisterCloseCustomerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,12 +99,15 @@
 		FE6166781E1D488F00961AFE /* CampaignByMerchantTableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampaignByMerchantTableViewCell2.xib; sourceTree = "<group>"; };
 		FE61667B1E1D48AF00961AFE /* ListCampaignByMerchantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCampaignByMerchantTableViewController.swift; sourceTree = "<group>"; };
 		FE61667D1E1D705600961AFE /* CouponInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponInfoViewController.swift; sourceTree = "<group>"; };
+		FE6F86951E213A73004B9AA0 /* MemberMerchantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberMerchantViewController.swift; sourceTree = "<group>"; };
+		FE6F86971E213A99004B9AA0 /* MemberMerchantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberMerchantTableViewCell.swift; sourceTree = "<group>"; };
+		FE6F86991E215818004B9AA0 /* MemberTabNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberTabNavigationController.swift; sourceTree = "<group>"; };
+		FE6F869B1E2160E1004B9AA0 /* Campaign+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Campaign+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FE6F869C1E2160E1004B9AA0 /* Campaign+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Campaign+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FE722D241E1E3E0B006A2905 /* MemberType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MemberType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FE722D251E1E3E0B006A2905 /* MemberType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MemberType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FE722D261E1E3E0B006A2905 /* Gift+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gift+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FE722D271E1E3E0B006A2905 /* Gift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gift+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		FE722D281E1E3E0B006A2905 /* Campaign+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Campaign+CoreDataClass.swift"; sourceTree = "<group>"; };
-		FE722D291E1E3E0B006A2905 /* Campaign+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Campaign+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FE722D2A1E1E3E0B006A2905 /* Branch+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Branch+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FE722D2B1E1E3E0B006A2905 /* Branch+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Branch+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FE77722F1E154C9800BDC74C /* LifePlus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifePlus.xcdatamodel; sourceTree = "<group>"; };
@@ -106,6 +116,10 @@
 		FE99156C1E14B611001FAB19 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FE99157A1E14E80D001FAB19 /* LifePlusAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifePlusAlertViewController.swift; sourceTree = "<group>"; };
 		FE99157C1E151787001FAB19 /* ChooseBrandTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBrandTableViewCell.swift; sourceTree = "<group>"; };
+		FECB2A4D1E2281E100C7826D /* BranchMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchMapViewController.swift; sourceTree = "<group>"; };
+		FECB2A4F1E2283B100C7826D /* BranchMapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchMapTableViewCell.swift; sourceTree = "<group>"; };
+		FECB2A521E228F7D00C7826D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FECB2A541E228F8300C7826D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FECE02D11E12043E00A77157 /* RegisterCloseCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCloseCustomerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECB2A551E228F8300C7826D /* MapKit.framework in Frameworks */,
+				FECB2A531E228F7D00C7826D /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +157,7 @@
 				57613C621E10D74000275081 /* LifePlusTests */,
 				57613C6D1E10D74000275081 /* LifePlusUITests */,
 				57613C4C1E10D73F00275081 /* Products */,
+				FECB2A511E228F7D00C7826D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,14 +243,14 @@
 		FE50E6F21E19786200F679C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FE6F869B1E2160E1004B9AA0 /* Campaign+CoreDataClass.swift */,
+				FE6F869C1E2160E1004B9AA0 /* Campaign+CoreDataProperties.swift */,
 				FE50E6EE1E19782000F679C4 /* Merchant+CoreDataClass.swift */,
 				FE50E6EF1E19782000F679C4 /* Merchant+CoreDataProperties.swift */,
 				FE722D241E1E3E0B006A2905 /* MemberType+CoreDataClass.swift */,
 				FE722D251E1E3E0B006A2905 /* MemberType+CoreDataProperties.swift */,
 				FE722D261E1E3E0B006A2905 /* Gift+CoreDataClass.swift */,
 				FE722D271E1E3E0B006A2905 /* Gift+CoreDataProperties.swift */,
-				FE722D281E1E3E0B006A2905 /* Campaign+CoreDataClass.swift */,
-				FE722D291E1E3E0B006A2905 /* Campaign+CoreDataProperties.swift */,
 				FE722D2A1E1E3E0B006A2905 /* Branch+CoreDataClass.swift */,
 				FE722D2B1E1E3E0B006A2905 /* Branch+CoreDataProperties.swift */,
 			);
@@ -259,8 +276,22 @@
 				FE6166781E1D488F00961AFE /* CampaignByMerchantTableViewCell2.xib */,
 				FE61667D1E1D705600961AFE /* CouponInfoViewController.swift */,
 				FE1A27B91E1DE969008C3253 /* DetailCampaignViewController.swift */,
+				FE6F86951E213A73004B9AA0 /* MemberMerchantViewController.swift */,
+				FE6F86971E213A99004B9AA0 /* MemberMerchantTableViewCell.swift */,
+				FE6F86991E215818004B9AA0 /* MemberTabNavigationController.swift */,
+				FECB2A4D1E2281E100C7826D /* BranchMapViewController.swift */,
+				FECB2A4F1E2283B100C7826D /* BranchMapTableViewCell.swift */,
 			);
 			name = Campaign;
+			sourceTree = "<group>";
+		};
+		FECB2A511E228F7D00C7826D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FECB2A541E228F8300C7826D /* MapKit.framework */,
+				FECB2A521E228F7D00C7826D /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,17 +440,21 @@
 				FE99157B1E14E80D001FAB19 /* LifePlusAlertViewController.swift in Sources */,
 				FE722D321E1E3E0B006A2905 /* Branch+CoreDataClass.swift in Sources */,
 				FE9343BA1E1C8F5800468472 /* LifePlusActivityIndicator.swift in Sources */,
-				FE722D301E1E3E0B006A2905 /* Campaign+CoreDataClass.swift in Sources */,
 				FE590FDA1E12B43700852E4C /* ConfirmSignUpViewController.swift in Sources */,
 				FE2D715D1E111DE8001E2E2B /* ChooseBrandViewController.swift in Sources */,
 				FE1A27BA1E1DE969008C3253 /* DetailCampaignViewController.swift in Sources */,
 				FE50E6F01E19782000F679C4 /* Merchant+CoreDataClass.swift in Sources */,
+				FECB2A4E1E2281E100C7826D /* BranchMapViewController.swift in Sources */,
 				FE590FD61E12AC0200852E4C /* SignUpAccountViewController.swift in Sources */,
 				FE590FD81E12ADAA00852E4C /* ConfirmSMSViewController.swift in Sources */,
 				FE722D2D1E1E3E0B006A2905 /* MemberType+CoreDataProperties.swift in Sources */,
+				FE6F869A1E215818004B9AA0 /* MemberTabNavigationController.swift in Sources */,
 				57613C511E10D74000275081 /* ViewController.swift in Sources */,
+				FE6F86961E213A73004B9AA0 /* MemberMerchantViewController.swift in Sources */,
+				FE6F869E1E2160E1004B9AA0 /* Campaign+CoreDataProperties.swift in Sources */,
 				FE7772301E154C9800BDC74C /* LifePlus.xcdatamodeld in Sources */,
 				FE50E6F51E19799500F679C4 /* NoConnectionViewController.swift in Sources */,
+				FECB2A501E2283B100C7826D /* BranchMapTableViewCell.swift in Sources */,
 				FE50E6F11E19782000F679C4 /* Merchant+CoreDataProperties.swift in Sources */,
 				FE722D2C1E1E3E0B006A2905 /* MemberType+CoreDataClass.swift in Sources */,
 				FE99156D1E14B611001FAB19 /* Utilities.swift in Sources */,
@@ -428,8 +463,9 @@
 				FE722D331E1E3E0B006A2905 /* Branch+CoreDataProperties.swift in Sources */,
 				FE2C80EE1E12528E00E9E105 /* CoreAPI.swift in Sources */,
 				FE61667E1E1D705600961AFE /* CouponInfoViewController.swift in Sources */,
+				FE6F869D1E2160E1004B9AA0 /* Campaign+CoreDataClass.swift in Sources */,
+				FE6F86981E213A99004B9AA0 /* MemberMerchantTableViewCell.swift in Sources */,
 				FE99157D1E151787001FAB19 /* ChooseBrandTableViewCell.swift in Sources */,
-				FE722D311E1E3E0B006A2905 /* Campaign+CoreDataProperties.swift in Sources */,
 				FE61667C1E1D48AF00961AFE /* ListCampaignByMerchantTableViewController.swift in Sources */,
 				57613C4F1E10D74000275081 /* AppDelegate.swift in Sources */,
 			);

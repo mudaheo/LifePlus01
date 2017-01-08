@@ -13,6 +13,8 @@ class CouponInfoViewController: UIViewController {
     @IBOutlet var myScrollView: UIScrollView!
     @IBOutlet var containerView: UIView!
     
+    var currentCampaign: Campaign!
+    var currentMerchant: Merchant!
     
 
     override func viewDidLoad() {
@@ -36,6 +38,13 @@ class CouponInfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailCampaign" {
+            let detailCampaignView = segue.destination as! DetailCampaignViewController
+            detailCampaignView.currentCampaign = currentCampaign
+            detailCampaignView.currentMerchant = currentMerchant
+        }
+    }
 
     /*
     // MARK: - Navigation

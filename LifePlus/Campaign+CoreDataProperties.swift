@@ -2,7 +2,7 @@
 //  Campaign+CoreDataProperties.swift
 //  LifePlus
 //
-//  Created by Nhân Phùng on 1/5/17.
+//  Created by Nhân Phùng on 1/8/17.
 //  Copyright © 2017 Javu. All rights reserved.
 //
 
@@ -31,10 +31,28 @@ extension Campaign {
     @NSManaged public var startDateCampaign: String?
     @NSManaged public var totalPointCampaign: Int32
     @NSManaged public var typeCampaign: String?
-    @NSManaged public var merchant: Merchant?
+    @NSManaged public var byMerchant: Int32
+    @NSManaged public var branchs: NSSet?
     @NSManaged public var gift: NSSet?
     @NSManaged public var memberType: NSSet?
-    @NSManaged public var branchs: NSSet?
+    @NSManaged public var merchant: Merchant?
+
+}
+
+// MARK: Generated accessors for branchs
+extension Campaign {
+
+    @objc(addBranchsObject:)
+    @NSManaged public func addToBranchs(_ value: Branch)
+
+    @objc(removeBranchsObject:)
+    @NSManaged public func removeFromBranchs(_ value: Branch)
+
+    @objc(addBranchs:)
+    @NSManaged public func addToBranchs(_ values: NSSet)
+
+    @objc(removeBranchs:)
+    @NSManaged public func removeFromBranchs(_ values: NSSet)
 
 }
 
@@ -69,22 +87,5 @@ extension Campaign {
 
     @objc(removeMemberType:)
     @NSManaged public func removeFromMemberType(_ values: NSSet)
-
-}
-
-// MARK: Generated accessors for branchs
-extension Campaign {
-
-    @objc(addBranchsObject:)
-    @NSManaged public func addToBranchs(_ value: Branch)
-
-    @objc(removeBranchsObject:)
-    @NSManaged public func removeFromBranchs(_ value: Branch)
-
-    @objc(addBranchs:)
-    @NSManaged public func addToBranchs(_ values: NSSet)
-
-    @objc(removeBranchs:)
-    @NSManaged public func removeFromBranchs(_ values: NSSet)
 
 }

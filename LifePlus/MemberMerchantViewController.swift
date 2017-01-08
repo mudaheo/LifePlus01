@@ -1,38 +1,43 @@
 //
-//  ChooseBrandViewController.swift
+//  MemberMerchantViewController.swift
 //  LifePlus
 //
-//  Created by Nhân Phùng on 12/26/16.
-//  Copyright © 2016 Javu. All rights reserved.
+//  Created by Nhân Phùng on 1/7/17.
+//  Copyright © 2017 Javu. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class ChooseBrandViewController: UIViewController {
+class MemberMerchantViewController: UIViewController {
+    
+    
     let coreDataStack: CoreDataStack = CoreDataStack()
     var merchantList: [Merchant]! = []
     var fetchRequest: NSFetchRequest<Merchant>!
     let color1: String = "00A73D"
     let color2: String = "52C458"
     var loadingView: UIView!
-    
-    
-    
-    @IBOutlet weak var merchantTableView: UITableView!
 
+    @IBOutlet weak var merchantTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.barTintColor = UIColor.greenLifePlus
 
-        navigationController?.navigationBar.barTintColor = UIColor.white
+        // Do any additional setup after loading the view.
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
-        importDataIfNeed()
-
+        loadMerchantData()
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
-    func importDataIfNeed() {
+
+    func loadMerchantData() {
         fetchRequest = Merchant.fetchRequest()
         do {
             let count = try coreDataStack.managedObjectContext.count(for: fetchRequest)
@@ -46,7 +51,7 @@ class ChooseBrandViewController: UIViewController {
                 APIInfo["urlAPI"] = "/merchant"
                 APIInfo["headerAPI"] = nil
                 APIInfo["paramBody"] = nil
-
+                
                 let coreAPI: CoreAPI = CoreAPI()
                 coreAPI.requestAPI(APIInfo, saveData: true, sendData: false, completionData: { (response, data) in
                     DispatchQueue.main.async {
@@ -70,7 +75,7 @@ class ChooseBrandViewController: UIViewController {
                         }
                     }
                 }
-
+                
             }
             else{
                 do {
@@ -85,12 +90,6 @@ class ChooseBrandViewController: UIViewController {
             fatalError("Error: \(error)")
         }
         
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     private func alertViewWithMessage(_ message: String,_ buttonTitle: String ) {
@@ -123,38 +122,32 @@ class ChooseBrandViewController: UIViewController {
         
     }
 
-
-    
-    @IBAction func handleCancelButton(_ sender: Any) {
-        
-        //
-    }
-
 }
-extension ChooseBrandViewController: UITableViewDataSource, UITableViewDelegate{
+
+extension MemberMerchantViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return merchantList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellID: String = "Cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as! ChooseBrandTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as! MemberMerchantTableViewCell
         let merchant: Merchant = merchantList[indexPath.row]
         
-        cell.nameBrandLabel.text! = merchant.merchantName!
-        cell.addressBrandLabel.text! = merchant.address!
-        cell.couponBranchLabel.text = "\(merchant.totalCampaignCoupon)"
+        cell.nameMerchantLabel.text! = merchant.merchantName!
+        cell.addressMerchantLabel.text! = merchant.address!
+        cell.couponCountLabel.text = "\(merchant.totalCampaignCoupon)"
         do {
-            cell.brandImageView.image = try UIImage(data: Data(contentsOf: URL(string: merchant.merchantLogo!)!))
+            cell.merchantImageView.image = try UIImage(data: Data(contentsOf: URL(string: merchant.merchantLogo!)!))
         } catch let error as NSError {
             print(error.localizedDescription)
         }
-        cell.couponBranchLabel.layer.cornerRadius = cell.couponBranchLabel.frame.width/2
-        cell.couponBranchLabel.clipsToBounds = true
-        cell.plusBrandLabel.layer.cornerRadius = cell.plusBrandLabel.frame.width/2
-        cell.plusBrandLabel.clipsToBounds = true
-        cell.brandImageView.layer.cornerRadius = cell.brandImageView.frame.width/2
-        cell.brandImageView.clipsToBounds = true
+        cell.couponCountLabel.layer.cornerRadius = cell.couponCountLabel.frame.width/2
+        cell.couponCountLabel.clipsToBounds = true
+        cell.plusLabel.layer.cornerRadius = cell.plusLabel.frame.width/2
+        cell.plusLabel.clipsToBounds = true
+        cell.merchantImageView.layer.cornerRadius = cell.merchantImageView.frame.width/2
+        cell.merchantImageView.clipsToBounds = true
         cell.containView.backgroundColor = UIColor.white.withAlphaComponent(0.7)
         if indexPath.row % 2 == 0{
             cell.myView.backgroundColor = UIColor(hex: color1, alpha: 1.0)
@@ -168,12 +161,13 @@ extension ChooseBrandViewController: UITableViewDataSource, UITableViewDelegate{
     // DELEGATE
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let registerCloseCustomer = self.storyboard?.instantiateViewController(withIdentifier: "RegisterCloseCustomerVC") as! RegisterCloseCustomerViewController
-        let merchant: Merchant = merchantList[indexPath.row]
-        registerCloseCustomer.merchantIndex = indexPath.row
-        registerCloseCustomer.currentMerchant = merchant
-        self.present(registerCloseCustomer, animated: true, completion: nil)
+        let listCampaignByMerchantView = self.storyboard?.instantiateViewController(withIdentifier: "listCampaignByMerchantVC") as! ListCampaignByMerchantTableViewController
+        listCampaignByMerchantView.merchant = merchantList[indexPath.row]
+        self.navigationController?.pushViewController(listCampaignByMerchantView, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
     }
 }
-
 
