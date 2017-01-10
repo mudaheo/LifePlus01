@@ -3,7 +3,21 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
+<<<<<<< HEAD
       "filename" : "Icon-App-20x20@2x.png",
+=======
+      "size" : "20x20",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "20x20",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "29x29",
+>>>>>>> dc3508afcc6a4c4f5c65f37671aff869210e051a
       "scale" : "2x"
     },
     {
