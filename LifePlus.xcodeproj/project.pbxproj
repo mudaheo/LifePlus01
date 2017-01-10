@@ -42,6 +42,8 @@
 		FE722D331E1E3E0B006A2905 /* Branch+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE722D2B1E1E3E0B006A2905 /* Branch+CoreDataProperties.swift */; };
 		FE7772301E154C9800BDC74C /* LifePlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE77722E1E154C9800BDC74C /* LifePlus.xcdatamodeld */; };
 		FE7772321E154CEC00BDC74C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7772311E154CEC00BDC74C /* CoreDataStack.swift */; };
+		FE7AB9CE1E248B410029C958 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7AB9CD1E248B410029C958 /* LoginViewController.swift */; };
+		FE7AB9D01E248B680029C958 /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7AB9CF1E248B680029C958 /* ForgotPassViewController.swift */; };
 		FE9343BA1E1C8F5800468472 /* LifePlusActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9343B91E1C8F5800468472 /* LifePlusActivityIndicator.swift */; };
 		FE99156D1E14B611001FAB19 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99156C1E14B611001FAB19 /* Utilities.swift */; };
 		FE99157B1E14E80D001FAB19 /* LifePlusAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99157A1E14E80D001FAB19 /* LifePlusAlertViewController.swift */; };
@@ -112,6 +114,8 @@
 		FE722D2B1E1E3E0B006A2905 /* Branch+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Branch+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FE77722F1E154C9800BDC74C /* LifePlus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifePlus.xcdatamodel; sourceTree = "<group>"; };
 		FE7772311E154CEC00BDC74C /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		FE7AB9CD1E248B410029C958 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FE7AB9CF1E248B680029C958 /* ForgotPassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
 		FE9343B91E1C8F5800468472 /* LifePlusActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifePlusActivityIndicator.swift; sourceTree = "<group>"; };
 		FE99156C1E14B611001FAB19 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FE99157A1E14E80D001FAB19 /* LifePlusAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifePlusAlertViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +240,8 @@
 				FE99157C1E151787001FAB19 /* ChooseBrandTableViewCell.swift */,
 				FE590FD71E12ADAA00852E4C /* ConfirmSMSViewController.swift */,
 				FE590FD51E12AC0200852E4C /* SignUpAccountViewController.swift */,
+				FE7AB9CD1E248B410029C958 /* LoginViewController.swift */,
+				FE7AB9CF1E248B680029C958 /* ForgotPassViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -433,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7AB9CE1E248B410029C958 /* LoginViewController.swift in Sources */,
 				FE6166751E1D486300961AFE /* CampaignByMerchantTableViewCell1.swift in Sources */,
 				FE7772321E154CEC00BDC74C /* CoreDataStack.swift in Sources */,
 				FE722D2E1E1E3E0B006A2905 /* Gift+CoreDataClass.swift in Sources */,
@@ -452,6 +459,7 @@
 				57613C511E10D74000275081 /* ViewController.swift in Sources */,
 				FE6F86961E213A73004B9AA0 /* MemberMerchantViewController.swift in Sources */,
 				FE6F869E1E2160E1004B9AA0 /* Campaign+CoreDataProperties.swift in Sources */,
+				FE7AB9D01E248B680029C958 /* ForgotPassViewController.swift in Sources */,
 				FE7772301E154C9800BDC74C /* LifePlus.xcdatamodeld in Sources */,
 				FE50E6F51E19799500F679C4 /* NoConnectionViewController.swift in Sources */,
 				FECB2A501E2283B100C7826D /* BranchMapTableViewCell.swift in Sources */,
