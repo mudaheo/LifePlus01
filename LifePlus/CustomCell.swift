@@ -12,7 +12,7 @@ class CustomCell: UITableViewCell {
     
     @IBOutlet weak var imvItem: UIImageView!
     @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var imvMerchant: UIImageView!
+    @IBOutlet weak var imvMerchant: UIImageView! 
     
 
     override func awakeFromNib() {
