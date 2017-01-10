@@ -23,7 +23,6 @@ class SearchViewController: UIViewController {
     
     var searchActive = false
     var lblMessage = UILabel()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,10 +88,21 @@ extension SearchViewController: UISearchBarDelegate {
         searchActive = true
         
         filterArr = campainNamesArr.filter({ (text) -> Bool in
+
             let tmp: NSString = text as NSString
+            
+            
+            if tmp == "" {
+                print("***")
+            }
+            
+            
             let range = tmp.range(of: searchBar.text!, options: NSString.CompareOptions.caseInsensitive)
+
             return range.location != NSNotFound
+            
         })
+        
         if(filterArr.count == 0){
             searchActive = false;
             tbvCampaign.isHidden  = true
@@ -112,6 +122,12 @@ extension SearchViewController: UISearchBarDelegate {
         }
         self.tbvCampaign.reloadData()
         sebCampaign.resignFirstResponder()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == "" {
+            searchBar.enablesReturnKeyAutomatically = false
+        }
     }
 }
 
